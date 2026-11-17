@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Judean Desert mountain-bike journey | Dinamo desert rides</title>
+<meta name="description" content="A full day of riding from Kfar Adumim to the Dragot Cliffs, through hidden canyons, peaks with open views of the Dead Sea and tracks few people know. Led by Dina Gabay and Eran (Buhi) Buhbut.">
+<link rel="canonical" href="https://dina-mo.com/en/desert-journeys/">
+<link rel="alternate" hreflang="he" href="https://dina-mo.com/desert-journeys/">
+<link rel="alternate" hreflang="en" href="https://dina-mo.com/en/desert-journeys/">
+<link rel="alternate" hreflang="x-default" href="https://dina-mo.com/desert-journeys/">
+<meta name="theme-color" content="#12203e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dinamo · דינמו">
+<meta property="og:title" content="Judean Desert mountain-bike journey | Dinamo desert rides">
+<meta property="og:description" content="A full day of riding from Kfar Adumim to the Dragot Cliffs, through hidden canyons, peaks with open views of the Dead Sea and tracks few people know. Led by Dina Gabay and Eran (Buhi) Buhbut.">
+<meta property="og:url" content="https://dina-mo.com/en/desert-journeys/">
+<meta property="og:image" content="https://dina-mo.com/media/desert-tall.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Dinamo", "item": "https://dina-mo.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Desert journeys", "item": "https://dina-mo.com/en/desert-journeys/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need an e-bike?", "acceptedAnswer": {"@type": "Answer", "text": "The journey is built for electric mountain bikes. If there's demand, we open a date for regular bikes too. Message Dina and tell her what you ride."}}, {"@type": "Question", "name": "How do we get back to the start?", "acceptedAnswer": {"@type": "Answer", "text": "A shuttle takes you back at the end. It costs 70 ₪, paid in cash to the driver."}}, {"@type": "Question", "name": "What should I bring?", "acceptedAnswer": {"@type": "Answer", "text": "A bike suited to off-road riding, a helmet, and a bag with water and a spare inner tube."}}, {"@type": "Question", "name": "When is the next journey?", "acceptedAnswer": {"@type": "Answer", "text": "New dates are announced on WhatsApp. Send a message and Dina will update you first."}}]}]</script>
+<style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Assistant:wght@300;400;600;700&display=swap">
+<style>
+/* Layout: point-of-view. Giant condensed headline + a strip of handlebar-cam films; every ride is a marked trail (Israeli white-colour-white blazes). Light by choice. */
+:root{
+  --chalk:#f2f4f3;     /* limestone, slightly cool */
+  --paper:#ffffff;
+  --ink:#12203e;       /* brand navy */
+  --blue:#316bb3;      /* brand blue  = שביל כחול */
+  --green:#50985a;     /* brand green = שביל ירוק */
+  --red:#bf3125;       /* brand red   = שביל אדום */
+  --black:#16181c;     /* שביל שחור */
+  --mute:#5b6478;
+  --line:rgba(18,32,62,.12);
+  --d:"Karantina","Assistant",system-ui,Arial,sans-serif;
+  --b:"Assistant",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--chalk);color:var(--ink);font-family:var(--b);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));max-width:1280px;margin-inline:auto}
+a{color:inherit}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(242,244,243,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--chalk)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.top img{height:28px;display:block}
+.top nav.main{display:flex;gap:4px;font-weight:600;font-size:15px}
+.top nav.main a{text-decoration:none;display:inline-flex;align-items:center;gap:7px;padding:8px 10px;border-radius:10px;white-space:nowrap;transition:background .2s}
+.top nav.main a:hover{background:rgba(18,32,62,.07)}
+.top nav.main .blaze{width:16px}.top nav.main .blaze i{height:3px}
+.burger{display:none;align-items:center;gap:10px;background:none;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font:600 16px var(--b);color:var(--ink);cursor:pointer}
+.burger span{display:grid;gap:4px}.burger span i{display:block;width:22px;height:3px;background:var(--green);border-radius:2px}
+.burger span i:nth-child(2){width:15px}
+.dot{color:var(--red)}
+.scrim{position:fixed;inset:0;z-index:40;background:rgba(18,32,62,.35);opacity:0;pointer-events:none;transition:opacity .3s}
+.drawer{position:fixed;top:0;bottom:0;right:0;z-index:41;width:min(86vw,360px);background:var(--paper);box-shadow:-20px 0 60px rgba(18,32,62,.25);transform:translateX(105%);transition:transform .35s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;padding:calc(18px + env(safe-area-inset-top,0px)) max(22px,env(safe-area-inset-right,0px)) calc(22px + env(safe-area-inset-bottom,0px)) 22px;overflow-y:auto}
+.menu-open .drawer{transform:none}.menu-open .scrim{opacity:1;pointer-events:auto}
+.drawer .dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.drawer .dh img{height:26px}
+.drawer .x{background:none;border:0;font-size:30px;line-height:1;color:var(--ink);cursor:pointer;padding:4px 8px}
+.drawer small{font-weight:700;color:var(--mute);letter-spacing:.06em;margin:6px 0 4px}
+.drawer a.it{display:flex;align-items:center;gap:14px;text-decoration:none;padding:14px 4px;border-bottom:1px solid var(--line)}
+.drawer a.it b{font-family:var(--d);font-weight:700;font-size:36px;line-height:.9}
+.drawer a.it em{font-style:normal;font-size:14px;color:var(--mute);margin-inline-start:auto;text-align:left}
+.drawer .btn{margin-top:22px;justify-content:center}
+@media (max-width:1180px){.top nav.main{display:none}.burger{display:inline-flex}}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:16px;border-radius:12px;padding:12px 20px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--blue)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* blaze: white-colour-white trail mark */
+.blaze{display:inline-flex;flex-direction:column;width:34px;border-radius:3px;overflow:hidden;box-shadow:0 0 0 1px var(--line);flex:none}
+.blaze i{height:7px;background:#fff}.blaze i:nth-child(2){background:var(--c)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(28px,5vw,64px) clamp(40px,6vw,80px)}
+.hero h1{font-family:var(--d);font-weight:700;font-size:clamp(96px,15vw,232px);line-height:.78;letter-spacing:-.01em;margin:0}
+.hero h1 span{display:block}
+.hero h1 .c{color:var(--blue)}
+/* rolling wheels behind everything */
+#wheels{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer{position:relative;z-index:1}
+.hero .lede{font-size:clamp(18px,1.6vw,21px);max-width:38ch;margin:24px 0 28px;color:var(--mute)}
+.hero .lede b{color:var(--ink);font-weight:600}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero .ghost{font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
+.reel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.clip{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:9/16;background:#cfd6dc;box-shadow:0 30px 60px -30px rgba(18,32,62,.45)}
+.clip:nth-child(2){margin-top:56px}.clip:nth-child(3){margin-top:-28px}
+.clip video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.clip .tag{position:absolute;inset:auto 10px 10px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.92);border-radius:10px;padding:7px 10px;font-size:14px;font-weight:700;line-height:1.2}
+.clip .tag .blaze{width:22px}.clip .tag .blaze i{height:5px}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .reel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(-1 * max(18px,env(safe-area-inset-left,0px)));padding-inline:max(18px,env(safe-area-inset-left,0px));scrollbar-width:none;order:-1}
+  .reel::-webkit-scrollbar{display:none}
+  .clip{flex:0 0 68vw;scroll-snap-align:center;margin-top:0!important}
+}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;padding-block:16px}
+.ticker .run{display:flex;gap:40px;width:max-content;animation:run 38s linear infinite;font-family:var(--d);font-size:40px;line-height:1;letter-spacing:.01em}
+.ticker .run span{display:flex;align-items:center;gap:40px;white-space:nowrap}
+.ticker .run span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--blue)}
+@keyframes run{to{transform:translateX(50%)}}
+
+/* trails */
+.sec{padding-block:clamp(70px,9vw,120px)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
+.head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
+.head p{margin:0;max-width:40ch;color:var(--mute)}
+.trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
+.trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
+.trail .media img,.trail .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.trail .media video{opacity:0;transition:opacity .4s}
+.trail.play .media video{opacity:1}
+.trail .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.trail .mark{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--mute)}
+.trail h3{font-family:var(--d);font-weight:700;font-size:52px;line-height:.9;margin:0}
+.trail p{margin:0;font-size:17px;color:var(--mute)}
+.trail .meta{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;gap:10px;font-weight:600;font-size:15px}
+@media (max-width:960px){.trails{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.trails{grid-template-columns:1fr}}
+
+/* numbers on the trail */
+.nums{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0;background:var(--paper);border-radius:28px;overflow:hidden;border:1px solid var(--line)}
+.nums .v{position:relative;min-height:420px}
+.nums .v video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.nums .t{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:8px}
+.nums .t small{font-weight:700;color:var(--blue);letter-spacing:.06em}
+.nums dl{margin:12px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+.nums dt{font-family:var(--d);font-weight:700;font-size:clamp(64px,7vw,96px);line-height:.85;font-variant-numeric:tabular-nums}
+.nums dd{margin:4px 0 0;color:var(--mute);font-size:16px}
+.nums .t .btn{align-self:flex-start;margin-top:26px}
+@media (max-width:860px){.nums{grid-template-columns:1fr}.nums .v{min-height:0;aspect-ratio:4/5}}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.voice{background:var(--ink);color:#fff;border-radius:20px;padding:28px 26px;display:flex;flex-direction:column;gap:18px}
+.voice:nth-child(2){background:var(--blue)}
+.voice:nth-child(3){background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.voice q{quotes:none;font-family:var(--d);font-weight:700;font-size:48px;line-height:.95}
+.voice span{font-size:15px;opacity:.8;margin-top:auto}
+@media (max-width:860px){.voices{grid-template-columns:1fr}}
+
+/* dina */
+.dina{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.dina .gal{position:relative;width:clamp(240px,28vw,360px);aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 50px -24px rgba(18,32,62,.5);background:#d8dee2}
+.dina .track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.dina .track::-webkit-scrollbar{display:none}
+.dina .track img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center;display:block}
+.dina .dots{position:absolute;inset:auto 0 12px;display:flex;justify-content:center;gap:8px}
+.dina .dots button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer;transition:background .2s,transform .2s}
+.dina .dots button[aria-current="true"]{background:#fff;transform:scale(1.3)}
+@media (max-width:700px){.dina .gal{width:min(100%,380px)}}
+.dina h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,7vw,104px);line-height:.85;margin:0 0 14px}
+.dina p{margin:0 0 12px;max-width:56ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips span{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
+@media (max-width:700px){.dina{grid-template-columns:1fr;justify-items:start}}
+
+/* go */
+.go{background:var(--blue);color:#fff;border-radius:32px;padding:clamp(36px,6vw,80px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;position:relative;overflow:hidden}
+.go h2{font-family:var(--d);font-weight:700;font-size:clamp(110px,17vw,260px);line-height:.75;margin:0}
+.go p{margin:16px 0 0;font-size:20px;max-width:34ch}
+.go .btn{background:#fff;color:var(--ink);font-size:18px;padding:16px 26px}
+.go .btn:hover{background:var(--ink);color:#fff}
+@media (max-width:700px){.go{grid-template-columns:1fr}}
+footer{padding-block:40px calc(40px + env(safe-area-inset-bottom,0px));color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+footer img{height:24px}
+.fab{position:fixed;left:max(16px,env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:none;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 20px;box-shadow:0 10px 30px rgba(18,32,62,.35)}
+.fab svg{width:20px;height:20px;fill:currentColor}
+@media (max-width:760px){.top > .wrap > .btn{display:none}.fab{display:inline-flex}}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+/* "זזים": the desert seen through the word, scroll zooms into one letter until the film fills the screen */
+.zz{position:relative;height:240vh}
+.zstage{position:sticky;top:0;height:100svh;overflow:hidden}
+.zstage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.zstage canvas{position:absolute;inset:0;width:100%;height:100%}
+.zline{position:absolute;inset:auto 0 14%;text-align:center;font-family:var(--d);font-weight:700;font-size:clamp(64px,10vw,140px);line-height:.85;color:#fff;opacity:0;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+@media (prefers-reduced-motion:reduce){.ticker .run{animation:none}*{transition:none!important}.zz{height:auto}.zstage{position:relative}.zstage canvas{display:none}.zline{opacity:1}}
+</style>
+
+
+<style>
+.skip{position:absolute;top:-80px;inset-inline-start:12px;z-index:100;background:var(--ink);color:#fff;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip:focus{top:12px}
+.lang{font-weight:700;text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:10px;white-space:nowrap;font-size:15px}
+.lang:hover{background:rgba(18,32,62,.07)}
+.still-btn{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:600 14px var(--b);cursor:pointer;box-shadow:0 6px 20px rgba(18,32,62,.15)}
+.still-btn svg{width:16px;height:16px;fill:currentColor}
+.still .ticker .run{animation-play-state:paused}
+footer a{color:inherit}
+[dir=ltr] .ticker .run{animation-name:runl}
+@keyframes runl{to{transform:translateX(-50%)}}
+[lang=en] .hero h1{font-size:clamp(84px,11.5vw,180px)}
+</style>
+<style>
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:15px;color:var(--mute);padding-block:20px 0}
+.crumbs a{color:inherit}
+.dhero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(16px,3vw,36px) clamp(40px,6vw,72px)}
+.dhero .mark{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--mute);font-size:15px}
+.dhero h1{font-family:var(--d);font-weight:700;font-size:clamp(84px,12vw,176px);line-height:.8;margin:16px 0 12px;text-wrap:balance}
+[lang=en] .dhero h1{font-size:clamp(72px,9vw,140px)}
+.dhero .sub{font-weight:700;font-size:clamp(19px,2vw,24px);margin:0 0 14px;color:var(--blue)}
+.dhero .lead{font-size:clamp(18px,1.6vw,21px);color:var(--mute);max-width:46ch;margin:0 0 26px}
+.dhero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.dhero .ghost{font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
+.dmedia{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:76svh;width:100%;justify-self:center;background:#d8dee2;box-shadow:0 30px 60px -30px rgba(18,32,62,.45)}
+.dmedia video,.dmedia img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:860px){.dhero{grid-template-columns:1fr}.dmedia{order:-1;max-height:none;aspect-ratio:4/4.6}}
+.dsec{padding-block:clamp(36px,6vw,70px)}
+.dsec h2{font-family:var(--d);font-weight:700;font-size:clamp(56px,7vw,96px);line-height:.85;margin:0 0 26px}
+.hl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.hl li{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px 22px;display:flex;gap:14px;align-items:flex-start;font-size:18px;font-weight:600}
+.hl li::before{content:"";flex:none;width:10px;height:10px;border-radius:50%;background:var(--c);margin-top:10px}
+@media (max-width:700px){.hl{grid-template-columns:1fr}}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.facts div{padding:16px 22px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;align-items:baseline}
+.facts dt{font-weight:700;color:var(--mute);font-size:16px}
+.facts dd{margin:0;font-weight:600}
+@media (max-width:700px){.facts{grid-template-columns:1fr}.facts div{grid-template-columns:1fr;gap:2px}}
+.fit{margin:22px 0 0;font-size:19px;max-width:62ch}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:0 22px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700;font-size:18px;padding:18px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:26px;line-height:1;color:var(--blue);flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:0 0 18px;color:var(--mute)}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
+.more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<canvas id="wheels" aria-hidden="true"></canvas>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+  <a href="/en/" aria-label="Dinamo, home"><img src="/media/logo-l01.png" alt="Dinamo · Ride together"></a>
+  <nav class="main" aria-label="Rides">
+    <a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a>
+    <a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a>
+    <a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a>
+    <a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a>
+    <a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids' clubs</a>
+    <a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a>
+    <a href="/en/#dina">About Dina</a>
+  </nav>
+  <a class="lang" href="/desert-journeys/" hreflang="he" lang="he">עברית</a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span aria-hidden="true"><i></i><i></i><i></i></span></button>
+  <a class="btn" href="https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20your%20rides" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>WhatsApp</a>
+</div></header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="drawer" id="drawer" aria-label="Rides menu">
+  <div class="dh"><img src="/media/logo-l01.png" alt="Dinamo"><button class="x" id="closeMenu" aria-label="Close menu">×</button></div>
+  <small>RIDES</small>
+  <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>A full desert day</em></a>
+  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Wine · springs</em></a>
+  <a class="it" href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Morning ride</b><em>Wednesdays 7:00</em></a>
+  <a class="it" href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>The 13 Journey</b><em>Bar/bat mitzvah</em></a>
+  <a class="it" href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Kids' clubs</b><em>Kfar Adumim</em></a>
+  <a class="it" href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span><b>Organizations</b><em>Tailor-made</em></a>
+  <a class="it" href="/en/#dina"><span class="blaze" style="--c:var(--ink)"><i></i><i></i><i></i></span><b>About Dina</b></a>
+  <a class="btn" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Ask Dina on WhatsApp</a>
+</nav>
+
+<main id="main" style="--c:var(--red)">
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="/en/">Dinamo</a><span aria-hidden="true">›</span><span aria-current="page">Desert journeys</span></nav>
+<section class="dhero wrap">
+  <div>
+    <div class="mark"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Red trail · for riders with experience</div>
+    <h1>Desert journeys</h1>
+    <p class="sub">Crossing the Wild · Judean Desert</p>
+    <p class="lead">A full day of riding from Kfar Adumim to the Dragot Cliffs, through hidden canyons, peaks with open views of the Dead Sea and tracks few people know. Led by Dina Gabay and Eran (Buhi) Buhbut.</p>
+    <div class="cta"><a class="btn" href="https://wa.me/972522142445?text=Hi%2C%20I%27d%20love%20details%20about%20the%20Judean%20Desert%20journey" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Details and next date</a><a class="ghost" href="#details">All the details</a></div>
+  </div>
+  <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/desert-tall.jpg" src="/media/desert-tall.mp4" aria-hidden="true"></video></figure>
+</section>
+<section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Hidden canyons and corners of the Judean Desert</li><li>Views over the Dead Sea and the Dragot Cliffs</li><li>Encounters on the way: shepherds, camels and desert quiet</li><li>A coffee stop and a shared finish at the end of the day</li></ul></section>
+<section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>Route</dt><dd>Kfar Adumim → Dragot Cliffs</dd></div><div><dt>Distance</dt><dd>about 50 km</dd></div><div><dt>Climbing</dt><dd>about 1,200 m total</dd></div><div><dt>Hours</dt><dd>7:00–15:00</dd></div><div><dt>Bikes</dt><dd>Electric mountain bikes</dd></div><div><dt>Price</dt><dd>180 ₪ per rider, plus 70 ₪ in cash for the shuttle back</dd></div><div><dt>Next date</dt><dd>Announced on WhatsApp</dd></div></dl><p class="fit"><b>Who it's for:</b> Riders with off-road experience who want a long, challenging day in wide open space.</p></section>
+<section class="wrap dsec faq"><h2>Questions</h2><details><summary>Do I need an e-bike?</summary><p>The journey is built for electric mountain bikes. If there&#x27;s demand, we open a date for regular bikes too. Message Dina and tell her what you ride.</p></details><details><summary>How do we get back to the start?</summary><p>A shuttle takes you back at the end. It costs 70 ₪, paid in cash to the driver.</p></details><details><summary>What should I bring?</summary><p>A bike suited to off-road riding, a helmet, and a bag with water and a spare inner tube.</p></details><details><summary>When is the next journey?</summary><p>New dates are announced on WhatsApp. Send a message and Dina will update you first.</p></details></section>
+<section class="sec wrap" id="go">
+  <div class="go">
+    <div><h2>Ready<span style="color:#ff6a5c">?</span></h2><p>Send Dina a WhatsApp message and she will get back to you with everything you need to know.</p></div>
+    <a class="btn" href="https://wa.me/972522142445?text=Hi%2C%20I%27d%20love%20details%20about%20the%20Judean%20Desert%20journey" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Details and next date</a>
+  </div>
+</section>
+<section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a><a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a></div></section>
+</main>
+<footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
+<a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
+
+<button class="still-btn" id="stillBtn" aria-pressed="false" data-off="Pause motion" data-on="Play motion"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg><span>Pause motion</span></button>
+<script>
+(()=>{const root=document.documentElement,b=document.getElementById('stillBtn'),P=HTMLMediaElement.prototype.play;
+HTMLMediaElement.prototype.play=function(){return root.classList.contains('still')?Promise.resolve():P.call(this);};
+const set=s=>{root.classList.toggle('still',s);b.setAttribute('aria-pressed',String(s));b.querySelector('span').textContent=s?b.dataset.on:b.dataset.off;
+document.querySelectorAll('video').forEach(v=>{if(s)v.pause();else if(v.autoplay||v.src)P.call(v).catch(()=>{});});
+try{localStorage.setItem('dm-still',s?'1':'0')}catch(e){}};
+b.addEventListener('click',()=>set(!root.classList.contains('still')));
+let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true);})();
+</script>
+<script>
+// Bicycle wheels drifting slowly through the background, each rolling as it travels.
+(()=>{
+  const cv=document.getElementById('wheels'), ctx=cv.getContext('2d');
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  let W=0,H=0,dpr=1,wheels=[];
+  const rnd=(a,b)=>a+Math.random()*(b-a);
+  function make(){
+    // four wheels, four clearly different sizes, spread over the four quarters of the screen
+    const k=innerWidth<760?.55:1, sizes=[170,110,70,42], spots=[[.2,.25],[.78,.7],[.7,.2],[.3,.8]]; wheels=[];
+    sizes.forEach((s,i)=>{
+      const r=s*k, sp=rnd(22,30)*(60/s+.6);              // px per second
+      wheels.push({x:spots[i][0]*W,y:spots[i][1]*H,r,sp,dir:rnd(0,6.28),turn:rnd(.08,.16)*(i%2?1:-1),
+        rot:rnd(0,6.28),spokes:[28,24,20,16][i],a:[.09,.11,.12,.13][i]});
+    });
+  }
+  function size(){dpr=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+  function wheel(w){
+    const {x,y,r,rot}=w; ctx.save(); ctx.translate(x,y); ctx.rotate(rot);
+    ctx.strokeStyle=`rgba(18,32,62,${w.a})`; ctx.fillStyle=`rgba(18,32,62,${w.a})`;
+    // tyre with tread
+    ctx.lineWidth=Math.max(2,r*.1); ctx.beginPath(); ctx.arc(0,0,r*.95,0,7); ctx.stroke();
+    ctx.lineWidth=Math.max(1,r*.025); ctx.setLineDash([r*.06,r*.06]); ctx.beginPath(); ctx.arc(0,0,r*1.02,0,7); ctx.stroke(); ctx.setLineDash([]);
+    // rim
+    ctx.lineWidth=Math.max(1,r*.03); ctx.beginPath(); ctx.arc(0,0,r*.84,0,7); ctx.stroke();
+    // laced spokes
+    ctx.lineWidth=Math.max(.6,r*.009);
+    for(let i=0;i<w.spokes;i++){const a=i/w.spokes*6.2832, off=(i%2?1:-1)*.45;
+      ctx.beginPath(); ctx.moveTo(Math.cos(a+off)*r*.1,Math.sin(a+off)*r*.1); ctx.lineTo(Math.cos(a)*r*.83,Math.sin(a)*r*.83); ctx.stroke();}
+    // hub + disc rotor
+    ctx.lineWidth=Math.max(1,r*.02); ctx.beginPath(); ctx.arc(0,0,r*.2,0,7); ctx.stroke();
+    ctx.beginPath(); ctx.arc(0,0,r*.08,0,7); ctx.fill();
+    ctx.restore();
+  }
+  let last=performance.now();
+  function frame(now){
+    if(document.documentElement.classList.contains('still')){last=now; if(!reduce) requestAnimationFrame(frame); return;}
+    const dt=Math.min(.05,(now-last)/1000); last=now; ctx.clearRect(0,0,W,H);
+    for(const w of wheels){
+      w.dir+=w.turn*dt;                                      // path curves gently, so wheels wander through the space
+      const vx=Math.cos(w.dir)*w.sp, vy=Math.sin(w.dir)*w.sp*.75;
+      w.x+=vx*dt; w.y+=vy*dt;
+      w.rot+=(w.sp/w.r)*1.6*dt*(vx<0?-1:1);                  // spins on its axis like a rolling wheel
+      const m=w.r*1.1;
+      if(w.x<-m)w.x=W+m; else if(w.x>W+m)w.x=-m;
+      if(w.y<-m)w.y=H+m; else if(w.y>H+m)w.y=-m;
+      wheel(w);
+    }
+    if(!reduce) requestAnimationFrame(frame);
+  }
+  size(); make(); requestAnimationFrame(frame);
+  addEventListener('resize',()=>{const ow=W; size(); if(Math.abs(ow-W)>80) make();});
+})();
+(()=>{
+  // anchors for the menu: one per ride card, in card order
+  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  const root=document.documentElement, burger=document.getElementById('burger');
+  const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
+  burger.addEventListener('click',()=>setOpen(true));
+  document.getElementById('closeMenu').addEventListener('click',()=>setOpen(false));
+  document.getElementById('scrim').addEventListener('click',()=>setOpen(false));
+  document.querySelectorAll('#drawer a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
+  addEventListener('keydown',e=>{if(e.key==='Escape')setOpen(false);});
+})();
+(()=>{
+  const touch = matchMedia('(hover:none)').matches;
+  const load=v=>{ if(!v.src && v.dataset.src) v.src=v.dataset.src; };
+  // trail cards: hover on desktop, auto-play when centred on phones
+  document.querySelectorAll('.trail').forEach(t=>{const v=t.querySelector('video'); if(!v) return;
+    const on=()=>{load(v); v.play().then(()=>t.classList.add('play')).catch(()=>{});}, off=()=>{v.pause(); t.classList.remove('play');};
+    if(!touch){ t.addEventListener('mouseenter',on); t.addEventListener('mouseleave',off); }
+    else new IntersectionObserver(([e])=>e.isIntersecting?on():off(),{threshold:.7}).observe(t);
+  });
+  // other lazy videos
+  const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target; if(e.isIntersecting){load(v); v.play().catch(()=>{});} else v.pause();}),{rootMargin:'200px'});
+  document.querySelectorAll('.nums video').forEach(v=>io.observe(v));
+  // Dina carousel: swipe, dots, gentle auto-advance until the visitor touches it
+  const tr=document.querySelector('.dina .track'), dots=document.querySelector('.dina .dots');
+  if(tr){
+    const imgs=[...tr.children]; let i=0, auto=true;
+    imgs.forEach((_,k)=>{const b=document.createElement('button'); b.setAttribute('aria-label','Photo '+(k+1)); b.onclick=()=>{auto=false; go(k);}; dots.append(b);});
+    const mark=()=>[...dots.children].forEach((b,k)=>b.setAttribute('aria-current',k===i));
+    const go=k=>{i=(k+imgs.length)%imgs.length; tr.scrollTo({left:i*tr.clientWidth,behavior:'smooth'}); mark();};
+    tr.addEventListener('scroll',()=>{const k=Math.round(tr.scrollLeft/tr.clientWidth); if(k!==i){i=k; mark();}},{passive:true});
+    ['pointerdown','touchstart','wheel'].forEach(e=>tr.addEventListener(e,()=>auto=false,{passive:true}));
+    mark();
+    if(!matchMedia('(prefers-reduced-motion:reduce)').matches) setInterval(()=>{if(auto && !document.documentElement.classList.contains('still')) go(i+1);},1200);
+  }
+})();
+(()=>{
+  const sec=document.getElementById('zz'); if(!sec) return;
+  const cv=document.getElementById('zzCut'), ctx=cv.getContext('2d'), line=document.getElementById('zzLine'), vid=document.getElementById('zzVid');
+  if(matchMedia('(max-width:760px)').matches){vid.poster='/media/desert-tall.jpg'; vid.querySelector('source').src='/media/desert-tall.mp4'; vid.load();}
+  const WORD='MOVE', CHALK='#f2f4f3';
+  let W=0,H=0,dpr=1,fs=0,ty=0,ox=0,oy=0,sEnd=40;
+  const font=()=>`700 ${fs}px Karantina`;
+  function layout(){
+    dpr=Math.min(devicePixelRatio||1,2); W=cv.clientWidth; H=cv.clientHeight; cv.width=W*dpr; cv.height=H*dpr;
+    // as big as the screen allows: Karantina is condensed, so the letters can be tall and the desert reads clearly through them
+    fs=Math.min(H*.9,W*.9); ctx.font=font(); ctx.direction='ltr';
+    let m=ctx.measureText(WORD); if(m.width>W*.9){fs*=W*.9/m.width; ctx.font=font(); m=ctx.measureText(WORD);}
+    ctx.textBaseline='alphabetic'; m=ctx.measureText(WORD);
+    ty=H*.46+(m.actualBoundingBoxAscent-m.actualBoundingBoxDescent)/2;
+    // zoom target: the thickest point inside a letter (nearest the centre), so the zoom ends inside the film, never on the gap between letters
+    const k=.25, w=Math.ceil(W*k), h=Math.ceil(H*k), oc=document.createElement('canvas'); oc.width=w; oc.height=h;
+    const o=oc.getContext('2d'); o.scale(k,k); o.font=font(); o.direction='ltr'; o.textAlign='center'; o.fillText(WORD,W/2,ty);
+    const d=o.getImageData(0,0,w,h).data, inside=(i,j)=>i>=0&&j>=0&&i<w&&j<h&&d[(j*w+i)*4+3]>160;
+    let best=-1,br=1,bx=w/2,by=h/2;
+    for(let j=0;j<h;j+=2)for(let i=0;i<w;i+=2){
+      if(!inside(i,j)) continue; let r=1;
+      for(;r<80;r++){let ok=true; for(let a=0;a<16;a++){const t=a*Math.PI/8; if(!inside(Math.round(i+Math.cos(t)*r),Math.round(j+Math.sin(t)*r))){ok=false;break;}} if(!ok)break;}
+      const sc=r-Math.hypot(i-w/2,j-h/2)*.03; if(sc>best){best=sc;br=r;bx=i;by=j;}
+    }
+    ox=bx/k; oy=by/k;
+    // scale at which the letter's stroke covers the whole screen: from here on nothing of the word is left
+    const far=Math.max(Math.hypot(ox,oy),Math.hypot(W-ox,oy),Math.hypot(ox,H-oy),Math.hypot(W-ox,H-oy));
+    sEnd=far/((br-1)/k)*1.1;
+    draw();
+  }
+  function draw(){
+    const span=sec.offsetHeight-innerHeight, top=sec.getBoundingClientRect().top;
+    const p=Math.min(Math.max(-top/span,0),1), z=Math.min(1,p/.7), s=1+Math.pow(z,2.4)*(sEnd-1);
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+    if(z<1){
+      ctx.globalCompositeOperation='source-over'; ctx.fillStyle=CHALK; ctx.fillRect(0,0,W,H);
+      ctx.globalCompositeOperation='destination-out';
+      ctx.translate(ox,oy); ctx.scale(s,s); ctx.translate(-ox,-oy);
+      ctx.font=font(); ctx.direction='ltr'; ctx.textAlign='center'; ctx.textBaseline='alphabetic'; ctx.fillText(WORD,W/2,ty);
+      ctx.globalCompositeOperation='source-over';
+    }
+    const l=Math.min(1,Math.max(0,(p-.72)*4)); line.style.opacity=String(l); line.style.transform=`translateY(${(1-l)*24}px)`;
+  }
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  let raf=0; const req=()=>{if(!raf) raf=requestAnimationFrame(()=>{raf=0; draw();});};
+  document.fonts.load('700 100px Karantina').finally(()=>{ (document.fonts.ready||Promise.resolve()).then(layout); });
+  layout();
+  addEventListener('scroll',req,{passive:true});
+  let lw=innerWidth,lh=innerHeight; addEventListener('resize',()=>{ if(Math.abs(innerWidth-lw)>2||Math.abs(innerHeight-lh)>120){lw=innerWidth; lh=innerHeight; layout();} else draw(); });
+})();
+</script>
+</body>
+</html>
