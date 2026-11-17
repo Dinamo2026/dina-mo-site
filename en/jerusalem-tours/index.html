@@ -379,7 +379,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-orgs','t-13','t-kids'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));
