@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>חוג אופני שטח לילדים בכפר אדומים | דינמו</title>
-<meta name="description" content="פחות מסך, יותר שביל. חוג שבועי שבו ילדים לומדים לרכוב בשטח, בונים ביטחון ומוצאים חברים אמיתיים בדרך. דינה מדריכה את החוגים בעצמה.">
+<meta name="description" content="פחות מסך, יותר שביל. חוג אופני שטח שבועי לכיתות א׳–ח׳, שעובד על טכניקה, ביטחון והנאה, ומחזק את הדימוי העצמי והביטחון העצמי של כל ילד וילדה. דינה מדריכה את החוגים בעצמה.">
 <link rel="canonical" href="https://dina-mo.com/kids-club/">
 <link rel="alternate" hreflang="he" href="https://dina-mo.com/kids-club/">
 <link rel="alternate" hreflang="en" href="https://dina-mo.com/en/kids-club/">
@@ -13,13 +13,13 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dinamo · דינמו">
 <meta property="og:title" content="חוג אופני שטח לילדים בכפר אדומים | דינמו">
-<meta property="og:description" content="פחות מסך, יותר שביל. חוג שבועי שבו ילדים לומדים לרכוב בשטח, בונים ביטחון ומוצאים חברים אמיתיים בדרך. דינה מדריכה את החוגים בעצמה.">
+<meta property="og:description" content="פחות מסך, יותר שביל. חוג אופני שטח שבועי לכיתות א׳–ח׳, שעובד על טכניקה, ביטחון והנאה, ומחזק את הדימוי העצמי והביטחון העצמי של כל ילד וילדה. דינה מדריכה את החוגים בעצמה.">
 <meta property="og:url" content="https://dina-mo.com/kids-club/">
 <meta property="og:image" content="https://dina-mo.com/media/jump.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "דינמו", "item": "https://dina-mo.com/"}, {"@type": "ListItem", "position": 2, "name": "חוגי ילדים", "item": "https://dina-mo.com/kids-club/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "מה הילד/ה צריך/ה להביא?", "acceptedAnswer": {"@type": "Answer", "text": "אופניים תקינים, קסדה ובקבוק מים."}}, {"@type": "Question", "name": "יש פעילות בחופשות?", "acceptedAnswer": {"@type": "Answer", "text": "כן. יש קייטנות רכיבה בחנוכה ובפסח, בתוספת תשלום."}}, {"@type": "Question", "name": "איך נרשמים?", "acceptedAnswer": {"@type": "Answer", "text": "שולחים לדינה הודעה בוואטסאפ, והיא חוזרת עם כל הפרטים."}}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "דינמו", "item": "https://dina-mo.com/"}, {"@type": "ListItem", "position": 2, "name": "חוגי ילדים", "item": "https://dina-mo.com/kids-club/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "מה הילד/ה צריך/ה להביא?", "acceptedAnswer": {"@type": "Answer", "text": "אופניים תקינים, קסדה ובקבוק מים."}}, {"@type": "Question", "name": "יש פעילות בחופשות?", "acceptedAnswer": {"@type": "Answer", "text": "כן. יש קייטנות רכיבה בחנוכה ובפסח."}}, {"@type": "Question", "name": "איך נרשמים?", "acceptedAnswer": {"@type": "Answer", "text": "שולחים לדינה הודעה בוואטסאפ, והיא חוזרת עם כל הפרטים."}}]}]</script>
 <style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Assistant:wght@300;400;600;700&display=swap">
@@ -115,6 +115,8 @@ main,footer{position:relative;z-index:1}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
+@media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
 .trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
 .trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
 .trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
@@ -246,11 +248,12 @@ footer a{color:inherit}
 <header class="top"><div class="wrap">
   <a href="/" aria-label="דינמו, לדף הבית"><img src="/media/logo-l01.png" alt="דינמו · Ride together"></a>
   <nav class="main" aria-label="התחומים">
-    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a>
+    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מדבר</a>
     <a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a>
+    <a href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>ירושלים</a>
     <a href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>רכיבת בוקר</a>
     <a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a>
-    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>חוגי ילדים</a>
+    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>ילדים</a>
     <a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים</a>
     <a href="/#dina">דינה</a>
   </nav>
@@ -263,8 +266,9 @@ footer a{color:inherit}
 <nav class="drawer" id="drawer" aria-label="תפריט התחומים">
   <div class="dh"><img src="/media/logo-l01.png" alt="דינמו"><button class="x" id="closeMenu" aria-label="סגירת התפריט">×</button></div>
   <small>התחומים</small>
-  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>יום שלם במדבר</em></a>
-  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>יין · מעיינות</em></a>
+  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>מותאם לקבוצה</em></a>
+  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>בוטיק לקבוצות</em></a>
+  <a class="it" href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>סיורי ירושלים</b><em>היסטוריה ותצפיות</em></a>
   <a class="it" href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>רכיבת בוקר</b><em>רביעי 07:00</em></a>
   <a class="it" href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>מסע ה-13</b><em>בר/בת מצווה</em></a>
   <a class="it" href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>חוגי ילדים</b><em>כפר אדומים</em></a>
@@ -280,21 +284,21 @@ footer a{color:inherit}
     <div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · ילדים</div>
     <h1>חוגי ילדים</h1>
     <p class="sub">חוג אופני שטח בכפר אדומים</p>
-    <p class="lead">פחות מסך, יותר שביל. חוג שבועי שבו ילדים לומדים לרכוב בשטח, בונים ביטחון ומוצאים חברים אמיתיים בדרך. דינה מדריכה את החוגים בעצמה.</p>
+    <p class="lead">פחות מסך, יותר שביל. חוג אופני שטח שבועי לכיתות א׳–ח׳, שעובד על טכניקה, ביטחון והנאה, ומחזק את הדימוי העצמי והביטחון העצמי של כל ילד וילדה. דינה מדריכה את החוגים בעצמה.</p>
     <div class="cta"><a class="btn" href="https://wa.me/972585903093?text=%D7%94%D7%99%D7%99%20%D7%93%D7%99%D7%A0%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%97%D7%95%D7%92" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>לפרטים והרשמה</a><a class="ghost" href="#details">כל הפרטים</a></div>
   </div>
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/jump.jpg" src="/media/jump.mp4" aria-hidden="true"></video></figure>
 </section>
-<section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>טכניקה ושליטה באופניים, בקצב של כל ילד/ה</li><li>ביטחון בשטח, ירידות ראשונות וקפיצות ראשונות</li><li>קבוצות לפי גיל</li><li>שתי רכיבות ארוכות במהלך השנה, בליווי ההורים</li><li>קייטנות רכיבה בחנוכה ובפסח</li></ul></section>
-<section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>איפה</dt><dd>כפר אדומים</dd></div><div><dt>מתי</dt><dd>פעם בשבוע, אחר הצהריים</dd></div><div><dt>גילאים</dt><dd>6–14, בקבוצות לפי גיל</dd></div><div><dt>מדריכה</dt><dd>דינה גבאי, מדריכת רכיבת הרים מוסמכת</dd></div><div><dt>מחיר והרשמה</dt><dd>בוואטסאפ</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> ילדים שאוהבים לזוז, להתלכלך קצת ולהיות בחוץ עם חברים.</p></section>
-<section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>מה הילד/ה צריך/ה להביא?</summary><p>אופניים תקינים, קסדה ובקבוק מים.</p></details><details><summary>יש פעילות בחופשות?</summary><p>כן. יש קייטנות רכיבה בחנוכה ובפסח, בתוספת תשלום.</p></details><details><summary>איך נרשמים?</summary><p>שולחים לדינה הודעה בוואטסאפ, והיא חוזרת עם כל הפרטים.</p></details></section>
+<section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>טכניקה ושליטה באופניים, בקצב של כל ילד/ה</li><li>ביטחון בשטח, ירידות ראשונות וקפיצות ראשונות</li><li>הנאה, חברים ושעה טובה בחוץ</li><li>דימוי עצמי וביטחון עצמי שמתחזקים מרכיבה לרכיבה</li><li>שתי רכיבות ארוכות בשנה, וקייטנות בחנוכה ובפסח</li></ul></section>
+<section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>איפה</dt><dd>כפר אדומים</dd></div><div><dt>מתי</dt><dd>פעם בשבוע, אחר הצהריים</dd></div><div><dt>כיתות</dt><dd>א׳–ח׳, בקבוצות לפי גיל</dd></div><div><dt>מדריכה</dt><dd>דינה גבאי, מדריכת רכיבת הרים מוסמכת</dd></div><div><dt>הרשמה</dt><dd>בוואטסאפ</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> ילדים שאוהבים לזוז, להתלכלך קצת ולהיות בחוץ עם חברים.</p></section>
+<section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>מה הילד/ה צריך/ה להביא?</summary><p>אופניים תקינים, קסדה ובקבוק מים.</p></details><details><summary>יש פעילות בחופשות?</summary><p>כן. יש קייטנות רכיבה בחנוכה ובפסח.</p></details><details><summary>איך נרשמים?</summary><p>שולחים לדינה הודעה בוואטסאפ, והיא חוזרת עם כל הפרטים.</p></details></section>
 <section class="sec wrap" id="go">
   <div class="go">
     <div><h2>זזים<span style="color:#ff6a5c">?</span></h2><p>שלחו לדינה הודעה בוואטסאפ, והיא חוזרת עם כל מה שצריך לדעת.</p></div>
     <a class="btn" href="https://wa.me/972585903093?text=%D7%94%D7%99%D7%99%20%D7%93%D7%99%D7%A0%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%97%D7%95%D7%92" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>לפרטים והרשמה</a>
   </div>
 </section>
-<section class="wrap dsec"><h2>עוד דרכים לרכוב איתנו</h2><div class="more"><a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a><a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a><a href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>רכיבת בוקר</a><a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a><a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים ומסגרות</a></div></section>
+<section class="wrap dsec"><h2>עוד דרכים לרכוב איתנו</h2><div class="more"><a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a><a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a><a href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>סיורי ירושלים</a><a href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>רכיבת בוקר</a><a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a><a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים ומסגרות</a></div></section>
 </main>
 <footer><div class="wrap"><img src="/media/logo-l01.png" alt="דינמו"><span>דינמו · מועדון הרכיבה של דינה גבאי · <a href="/accessibility/">הצהרת נגישות</a> · <a href="/en/" lang="en">English</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>הודעה לדינה</a>
@@ -364,7 +368,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));

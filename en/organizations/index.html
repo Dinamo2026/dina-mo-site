@@ -115,6 +115,8 @@ main,footer{position:relative;z-index:1}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
+@media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
 .trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
 .trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
 .trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
@@ -246,11 +248,12 @@ footer a{color:inherit}
 <header class="top"><div class="wrap">
   <a href="/en/" aria-label="Dinamo, home"><img src="/media/logo-l01.png" alt="Dinamo · Ride together"></a>
   <nav class="main" aria-label="Rides">
-    <a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a>
+    <a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert</a>
     <a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a>
+    <a href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem</a>
     <a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a>
     <a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a>
-    <a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids' clubs</a>
+    <a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids</a>
     <a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a>
     <a href="/en/#dina">About Dina</a>
   </nav>
@@ -263,8 +266,9 @@ footer a{color:inherit}
 <nav class="drawer" id="drawer" aria-label="Rides menu">
   <div class="dh"><img src="/media/logo-l01.png" alt="Dinamo"><button class="x" id="closeMenu" aria-label="Close menu">×</button></div>
   <small>RIDES</small>
-  <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>A full desert day</em></a>
-  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Wine · springs</em></a>
+  <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>Tailored to your group</em></a>
+  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Boutique, for groups</em></a>
+  <a class="it" href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Jerusalem tours</b><em>History and views</em></a>
   <a class="it" href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Morning ride</b><em>Wednesdays 7:00</em></a>
   <a class="it" href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>The 13 Journey</b><em>Bar/bat mitzvah</em></a>
   <a class="it" href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Kids' clubs</b><em>Kfar Adumim</em></a>
@@ -286,7 +290,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/group.jpg" src="/media/group.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Team-building days for companies: a day of riding outdoors with good stops</li><li>Technique workshops for groups, such as a bike-park session</li><li>Weekly guided programs for youth villages, boarding schools and nonprofits</li><li>Calm rides on wide trails that strengthen a sense of capability</li></ul></section>
-<section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>For</dt><dd>Companies, schools, youth villages, boarding schools, nonprofits and therapeutic programs</dd></div><div><dt>Format</dt><dd>A single day, a workshop, or a regular weekly program</dd></div><div><dt>Experience</dt><dd>Soldiers after injury, PTSD, mental-health support, kids on the autism spectrum, at-risk youth, children and adults</dd></div><div><dt>Price</dt><dd>A personal quote for your group</dd></div></dl><p class="fit"><b>Who it's for:</b> Organizations looking for an outdoor activity that brings people together, and programs that want regular, professional guiding.</p></section>
+<section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>For</dt><dd>Companies, schools, youth villages, boarding schools, nonprofits and therapeutic programs</dd></div><div><dt>Format</dt><dd>A single day, a workshop, or a regular weekly program</dd></div><div><dt>Experience</dt><dd>Soldiers after injury, PTSD, mental-health support, kids on the autism spectrum, at-risk youth, children and adults</dd></div></dl><p class="fit"><b>Who it's for:</b> Organizations looking for an outdoor activity that brings people together, and programs that want regular, professional guiding.</p></section>
 <section class="wrap dsec faq"><h2>Questions</h2><details><summary>Can the activity be tailored to our group?</summary><p>Yes. Dina builds the route, pace and content around your group size, experience and goal.</p></details><details><summary>Do you work with therapeutic programs?</summary><p>Yes. Dina guides calm rides on wide trails, with experience working with PTSD, injuries and at-risk youth.</p></details><details><summary>How do we get a quote?</summary><p>Send a message with a few words about your group and Dina will get back to you with an offer.</p></details></section>
 <section class="sec wrap" id="go">
   <div class="go">
@@ -294,7 +298,7 @@ footer a{color:inherit}
     <a class="btn" href="https://wa.me/972522142445?text=Hi%2C%20I%27d%20love%20details%20about%20an%20activity%20for%20our%20organization" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Build an activity for our group</a>
   </div>
 </section>
-<section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a></div></section>
+<section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem tours</a><a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a></div></section>
 </main>
 <footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
@@ -364,7 +368,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));

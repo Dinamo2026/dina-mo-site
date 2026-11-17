@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "דינמו", "item": "https://dina-mo.com/"}, {"@type": "ListItem", "position": 2, "name": "רכיבת בוקר", "item": "https://dina-mo.com/morning-ride/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "אני לא בטוח/ה שאני ברמה מתאימה", "acceptedAnswer": {"@type": "Answer", "text": "המסלול נבחר לפי מי שהגיע, ואפשר לקצר או להאריך תוך כדי. הרכיבה הראשונה ללא עלות, אז אפשר פשוט לבוא ולנסות."}}, {"@type": "Question", "name": "איפה נפגשים?", "acceptedAnswer": {"@type": "Answer", "text": "בכל שבוע מסלול אחר באזור ירושלים. נקודת המפגש נשלחת לנרשמים לפני הרכיבה."}}, {"@type": "Question", "name": "מה כולל המנוי החודשי?", "acceptedAnswer": {"@type": "Answer", "text": "340 ₪ בחודש לכל רכיבות החודש. המנוי גם שומר לך מקום קבוע בקבוצה."}}, {"@type": "Question", "name": "כמה רוכבים בקבוצה?", "acceptedAnswer": {"@type": "Answer", "text": "מספר המקומות מוגבל, כדי שתהיה קבוצה ולא המון."}}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "דינמו", "item": "https://dina-mo.com/"}, {"@type": "ListItem", "position": 2, "name": "רכיבת בוקר", "item": "https://dina-mo.com/morning-ride/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "אני לא בטוח/ה שאני ברמה מתאימה", "acceptedAnswer": {"@type": "Answer", "text": "המסלול נבחר לפי מי שהגיע, ואפשר לקצר או להאריך תוך כדי. הרכיבה הראשונה ללא עלות, אז אפשר פשוט לבוא ולנסות."}}, {"@type": "Question", "name": "איפה נפגשים?", "acceptedAnswer": {"@type": "Answer", "text": "בכל שבוע מסלול אחר באזור ירושלים. נקודת המפגש נשלחת לנרשמים לפני הרכיבה."}}, {"@type": "Question", "name": "יש מנוי חודשי?", "acceptedAnswer": {"@type": "Answer", "text": "כן. המנוי כולל את כל רכיבות החודש ושומר לך מקום קבוע בקבוצה. הפרטים בוואטסאפ."}}, {"@type": "Question", "name": "כמה רוכבים בקבוצה?", "acceptedAnswer": {"@type": "Answer", "text": "מספר המקומות מוגבל, כדי שתהיה קבוצה ולא המון."}}]}]</script>
 <style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Assistant:wght@300;400;600;700&display=swap">
@@ -115,6 +115,8 @@ main,footer{position:relative;z-index:1}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
+@media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
 .trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
 .trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
 .trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
@@ -246,11 +248,12 @@ footer a{color:inherit}
 <header class="top"><div class="wrap">
   <a href="/" aria-label="דינמו, לדף הבית"><img src="/media/logo-l01.png" alt="דינמו · Ride together"></a>
   <nav class="main" aria-label="התחומים">
-    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a>
+    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מדבר</a>
     <a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a>
+    <a href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>ירושלים</a>
     <a href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>רכיבת בוקר</a>
     <a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a>
-    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>חוגי ילדים</a>
+    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>ילדים</a>
     <a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים</a>
     <a href="/#dina">דינה</a>
   </nav>
@@ -263,8 +266,9 @@ footer a{color:inherit}
 <nav class="drawer" id="drawer" aria-label="תפריט התחומים">
   <div class="dh"><img src="/media/logo-l01.png" alt="דינמו"><button class="x" id="closeMenu" aria-label="סגירת התפריט">×</button></div>
   <small>התחומים</small>
-  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>יום שלם במדבר</em></a>
-  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>יין · מעיינות</em></a>
+  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>מותאם לקבוצה</em></a>
+  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>בוטיק לקבוצות</em></a>
+  <a class="it" href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>סיורי ירושלים</b><em>היסטוריה ותצפיות</em></a>
   <a class="it" href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>רכיבת בוקר</b><em>רביעי 07:00</em></a>
   <a class="it" href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>מסע ה-13</b><em>בר/בת מצווה</em></a>
   <a class="it" href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>חוגי ילדים</b><em>כפר אדומים</em></a>
@@ -286,15 +290,15 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/forest.jpg" src="/media/forest.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>סינגלים, שבילי יער ורכסים, חצי שעה מהבית</li><li>רכיבה שמעלה כושר, ותוך כדי עובדים על טכניקה</li><li>מסלול שמותאם לקבוצה, עם אפשרות לקצר או להאריך</li><li>כולם מגיעים ביחד, ואף אחד לא נשאר מאחור</li><li>קפה בסוף, ומשם ישר לעבודה</li></ul></section>
-<section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>מתי</dt><dd>כל יום רביעי, 07:00–09:00</dd></div><div><dt>רכיבה ראשונה</dt><dd>רביעי 25.11.2026</dd></div><div><dt>איפה</dt><dd>אזור ירושלים, בכל שבוע מסלול אחר. נקודת המפגש נשלחת מראש</dd></div><div><dt>ניסיון ראשון</dt><dd>הרכיבה הראשונה ללא עלות</dd></div><div><dt>מחיר</dt><dd>90 ₪ לרכיבה, או 340 ₪ במנוי חודשי לכל רכיבות החודש</dd></div><div><dt>ציוד</dt><dd>אופני שטח משלכם וקסדה</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> מי שרוכב/ת שטח, ומי שרוצה להתחיל ולבנות שגרה קבועה של תנועה.</p></section>
-<section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>אני לא בטוח/ה שאני ברמה מתאימה</summary><p>המסלול נבחר לפי מי שהגיע, ואפשר לקצר או להאריך תוך כדי. הרכיבה הראשונה ללא עלות, אז אפשר פשוט לבוא ולנסות.</p></details><details><summary>איפה נפגשים?</summary><p>בכל שבוע מסלול אחר באזור ירושלים. נקודת המפגש נשלחת לנרשמים לפני הרכיבה.</p></details><details><summary>מה כולל המנוי החודשי?</summary><p>340 ₪ בחודש לכל רכיבות החודש. המנוי גם שומר לך מקום קבוע בקבוצה.</p></details><details><summary>כמה רוכבים בקבוצה?</summary><p>מספר המקומות מוגבל, כדי שתהיה קבוצה ולא המון.</p></details></section>
+<section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>מתי</dt><dd>כל יום רביעי, 07:00–09:00</dd></div><div><dt>רכיבה ראשונה</dt><dd>רביעי 25.11.2026</dd></div><div><dt>איפה</dt><dd>אזור ירושלים, בכל שבוע מסלול אחר. נקודת המפגש נשלחת מראש</dd></div><div><dt>ניסיון ראשון</dt><dd>הרכיבה הראשונה ללא עלות</dd></div><div><dt>מנוי</dt><dd>אפשר לבוא לרכיבה בודדת, או להצטרף במנוי חודשי</dd></div><div><dt>ציוד</dt><dd>אופני שטח משלכם וקסדה</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> מי שרוכב/ת שטח, ומי שרוצה להתחיל ולבנות שגרה קבועה של תנועה.</p></section>
+<section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>אני לא בטוח/ה שאני ברמה מתאימה</summary><p>המסלול נבחר לפי מי שהגיע, ואפשר לקצר או להאריך תוך כדי. הרכיבה הראשונה ללא עלות, אז אפשר פשוט לבוא ולנסות.</p></details><details><summary>איפה נפגשים?</summary><p>בכל שבוע מסלול אחר באזור ירושלים. נקודת המפגש נשלחת לנרשמים לפני הרכיבה.</p></details><details><summary>יש מנוי חודשי?</summary><p>כן. המנוי כולל את כל רכיבות החודש ושומר לך מקום קבוע בקבוצה. הפרטים בוואטסאפ.</p></details><details><summary>כמה רוכבים בקבוצה?</summary><p>מספר המקומות מוגבל, כדי שתהיה קבוצה ולא המון.</p></details></section>
 <section class="sec wrap" id="go">
   <div class="go">
     <div><h2>זזים<span style="color:#ff6a5c">?</span></h2><p>שלחו לדינה הודעה בוואטסאפ, והיא חוזרת עם כל מה שצריך לדעת.</p></div>
     <a class="btn" href="https://wa.me/972522142445?text=%D7%94%D7%99%D7%99%20%D7%93%D7%99%D7%A0%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%A8%D7%99%D7%99%D7%9F%20%D7%9E%D7%A7%D7%95%D7%9D%20%D7%91%D7%A8%D7%9B%D7%99%D7%91%D7%AA%20%D7%94%D7%91%D7%95%D7%A7%D7%A8%20%D7%A9%D7%9C%20%D7%99%D7%95%D7%9D%20%D7%A8%D7%91%D7%99%D7%A2%D7%99" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>לשריין מקום ברכיבה הראשונה</a>
   </div>
 </section>
-<section class="wrap dsec"><h2>עוד דרכים לרכוב איתנו</h2><div class="more"><a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a><a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a><a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a><a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>חוגי ילדים</a><a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים ומסגרות</a></div></section>
+<section class="wrap dsec"><h2>עוד דרכים לרכוב איתנו</h2><div class="more"><a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a><a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a><a href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>סיורי ירושלים</a><a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a><a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>חוגי ילדים</a><a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים ומסגרות</a></div></section>
 </main>
 <footer><div class="wrap"><img src="/media/logo-l01.png" alt="דינמו"><span>דינמו · מועדון הרכיבה של דינה גבאי · <a href="/accessibility/">הצהרת נגישות</a> · <a href="/en/" lang="en">English</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>הודעה לדינה</a>
@@ -364,7 +368,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));

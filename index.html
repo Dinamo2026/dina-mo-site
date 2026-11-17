@@ -119,6 +119,8 @@ main,footer{position:relative;z-index:1}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
+@media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
 .trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
 .trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
 .trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
@@ -214,11 +216,12 @@ footer a{color:inherit}
 <header class="top"><div class="wrap">
   <a href="/" aria-label="דינמו, לדף הבית"><img src="/media/logo-l01.png" alt="דינמו · Ride together"></a>
   <nav class="main" aria-label="התחומים">
-    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מסעות מדבר</a>
+    <a href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>מדבר</a>
     <a href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>סיורי יום</a>
+    <a href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>ירושלים</a>
     <a href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>רכיבת בוקר</a>
     <a href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>מסע ה-13</a>
-    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>חוגי ילדים</a>
+    <a href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>ילדים</a>
     <a href="/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>ארגונים</a>
     <a href="#dina">דינה</a>
   </nav>
@@ -231,8 +234,9 @@ footer a{color:inherit}
 <nav class="drawer" id="drawer" aria-label="תפריט התחומים">
   <div class="dh"><img src="/media/logo-l01.png" alt="דינמו"><button class="x" id="closeMenu" aria-label="סגירת התפריט">×</button></div>
   <small>התחומים</small>
-  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>יום שלם במדבר</em></a>
-  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>יין · מעיינות</em></a>
+  <a class="it" href="/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>מסעות מדבר</b><em>מותאם לקבוצה</em></a>
+  <a class="it" href="/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>סיורי יום</b><em>בוטיק לקבוצות</em></a>
+  <a class="it" href="/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>סיורי ירושלים</b><em>היסטוריה ותצפיות</em></a>
   <a class="it" href="/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>רכיבת בוקר</b><em>רביעי 07:00</em></a>
   <a class="it" href="/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>מסע ה-13</b><em>בר/בת מצווה</em></a>
   <a class="it" href="/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>חוגי ילדים</b><em>כפר אדומים</em></a>
@@ -271,15 +275,17 @@ footer a{color:inherit}
   <div class="head"><h2>בחרו שביל</h2><p>כל רכיבה מסומנת כמו שביל בארץ. לחצו על כרטיס לכל הפרטים.</p></div>
   <div class="trails">
     <a class="trail" href="/desert-journeys/"><div class="media"><img src="/media/desert-tall.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/desert-tall.mp4"></video></div>
-      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>שביל אדום · עם ניסיון רכיבה</div><h3>מסעות מדבר</h3><p>מכפר אדומים עד מצוקי דרגות, דרך נבי מוסא ותצפיות על ים המלח.</p><div class="meta"><span>יום שלם</span><span>מועדים קרובים בוואטסאפ</span></div></div></a>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>שביל אדום · מותאם לרמת הקבוצה</div><h3>מסעות מדבר</h3><p>רכיבות בלב מדבר יהודה, במסלולים לא מוכרים, עם תצפיות על ים המלח.</p><div class="meta"><span>מסלולים לא מוכרים</span><span>לפי רמת הקבוצה</span></div></div></a>
     <a class="trail" href="/day-tours/"><div class="media"><img src="/media/vines.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/vines.mp4"></video></div>
-      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · לרוכבים עם ניסיון</div><h3>סיורי יום</h3><p>רכיבת שטח בין כרמים, יקבי בוטיק ומעיינות בעמק האלה ובגוש עציון.</p><div class="meta"><span>כ-4 שעות</span><span>יין · מעיינות</span></div></div></a>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · בהזמנה לקבוצות</div><h3>סיורי יום</h3><p>סיורי בוטיק בעמק האלה, עם טעימות יין בין הכרמים, ובגוש עציון בין יקבים ומעיינות.</p><div class="meta"><span>בוטיק</span><span>בהזמנה לקבוצות</span></div></div></a>
+    <a class="trail" href="/jerusalem-tours/"><div class="media"><img src="/media/jerusalem.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/jerusalem.mp4"></video></div>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · בהזמנה לקבוצות</div><h3>סיורי ירושלים</h3><p>סיור יום על אופניים בין אתרים היסטוריים ומעניינים בירושלים, עם תצפיות יפות על העיר.</p><div class="meta"><span>היסטוריה ותצפיות</span><span>עברית · English</span></div></div></a>
     <a class="trail" href="/morning-ride/"><div class="media"><img src="/media/forest.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/forest.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · קבוצה קבועה</div><h3>רכיבת בוקר</h3><p>כל יום רביעי, 07:00–09:00, בכל שבוע מסלול אחר באזור ירושלים. מתחילים את היום בשביל.</p><div class="meta"><span>רביעי · 07:00</span><span>הראשונה ללא עלות</span></div></div></a>
     <a class="trail" href="/bar-mitzvah-journey/"><div class="media"><img src="/media/jaffa-night.jpg" alt="אבא ובת עם אופניים מול שער יפו בלילה" loading="lazy" style="object-position:50% 72%"></div>
-      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · הורה וילד/ה</div><h3>מסע ה-13</h3><p>מסע פרטי בירושלים לקראת בר ובת מצווה. סיפורים, נקודות תצפית ורגע אחד גדול.</p><div class="meta"><span>יום אחד</span><span>פרטי</span></div></div></a>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · הורים ובן/בת המצווה</div><h3>מסע ה-13</h3><p>מסע מרגש של ההורים עם בן או בת המצווה, בין אתרים מפורסמים וקדושים בירושלים, עד התצפית על הר הבית.</p><div class="meta"><span>מכתב מההורים</span><span>תצפיות מרהיבות</span></div></div></a>
     <a class="trail" href="/kids-club/"><div class="media"><img src="/media/jump.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/jump.mp4"></video></div>
-      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · ילדים</div><h3>חוגי ילדים</h3><p>חוג רכיבת שטח בכפר אדומים: טכניקה, ביטחון, קפיצות ראשונות וחברים לדרך.</p><div class="meta"><span>פעם בשבוע</span><span>כפר אדומים</span></div></div></a>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · ילדים</div><h3>חוגי ילדים</h3><p>חוג אופני שטח בכפר אדומים לכיתות א׳–ח׳: טכניקה, ביטחון, הנאה ודימוי עצמי.</p><div class="meta"><span>פעם בשבוע</span><span>כפר אדומים</span></div></div></a>
     <a class="trail" href="/organizations/"><div class="media"><img src="/media/group.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/group.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>שביל שחור · לפי מידה</div><h3>ארגונים ומסגרות</h3><p>ימי גיבוש לחברות, סדנאות טכניקה ומסגרות הדרכה שבועיות לכפרי נוער ועמותות.</p><div class="meta"><span>בתיאום</span><span>הצעה אישית</span></div></div></a>
   </div>
@@ -293,8 +299,8 @@ footer a{color:inherit}
       <dl>
         <div><dt>07:00</dt><dd>יוצאים לשביל, וב-09:00 מסיימים</dd></div>
         <div><dt>25.11</dt><dd>הרכיבה הראשונה</dd></div>
-        <div><dt>0 ₪</dt><dd>הרכיבה הראשונה שלך, ללא עלות</dd></div>
-        <div><dt>90 ₪</dt><dd>לרכיבה, או 340 ₪ במנוי חודשי</dd></div>
+        <div><dt>חינם</dt><dd>הרכיבה הראשונה שלך</dd></div>
+        <div><dt>חדש</dt><dd>מסלול אחר בכל שבוע</dd></div>
       </dl>
       <a class="btn" href="https://wa.me/972522142445?text=%D7%94%D7%99%D7%99%20%D7%93%D7%99%D7%A0%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%A8%D7%99%D7%99%D7%9F%20%D7%9E%D7%A7%D7%95%D7%9D%20%D7%91%D7%A8%D7%9B%D7%99%D7%91%D7%AA%20%D7%94%D7%91%D7%95%D7%A7%D7%A8%20%D7%A9%D7%9C%20%D7%99%D7%95%D7%9D%20%D7%A8%D7%91%D7%99%D7%A2%D7%99" target="_blank" rel="noopener">לשריין מקום ברכיבה הראשונה</a>
     </div>
@@ -404,7 +410,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));

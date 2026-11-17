@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Dinamo", "item": "https://dina-mo.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Morning ride", "item": "https://dina-mo.com/en/morning-ride/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I'm not sure my level fits", "acceptedAnswer": {"@type": "Answer", "text": "The route is chosen for whoever shows up, and it can be shortened or extended on the way. The first ride is free, so just come and try."}}, {"@type": "Question", "name": "Where do we meet?", "acceptedAnswer": {"@type": "Answer", "text": "A different route every week around Jerusalem. The meeting point is sent to registered riders before the ride."}}, {"@type": "Question", "name": "What does the monthly pass include?", "acceptedAnswer": {"@type": "Answer", "text": "340 ₪ a month for all the month’s rides. It also keeps your spot in the group."}}, {"@type": "Question", "name": "How big is the group?", "acceptedAnswer": {"@type": "Answer", "text": "Spots are limited so it stays a group, not a crowd."}}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Dinamo", "item": "https://dina-mo.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Morning ride", "item": "https://dina-mo.com/en/morning-ride/"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "I'm not sure my level fits", "acceptedAnswer": {"@type": "Answer", "text": "The route is chosen for whoever shows up, and it can be shortened or extended on the way. The first ride is free, so just come and try."}}, {"@type": "Question", "name": "Where do we meet?", "acceptedAnswer": {"@type": "Answer", "text": "A different route every week around Jerusalem. The meeting point is sent to registered riders before the ride."}}, {"@type": "Question", "name": "Is there a monthly pass?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It covers all the month’s rides and keeps your spot in the group. Details on WhatsApp."}}, {"@type": "Question", "name": "How big is the group?", "acceptedAnswer": {"@type": "Answer", "text": "Spots are limited so it stays a group, not a crowd."}}]}]</script>
 <style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=Assistant:wght@300;400;600;700&display=swap">
@@ -115,6 +115,8 @@ main,footer{position:relative;z-index:1}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
+@media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
 .trail{background:var(--paper);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
 .trail:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
 .trail .media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#d8dee2}
@@ -246,11 +248,12 @@ footer a{color:inherit}
 <header class="top"><div class="wrap">
   <a href="/en/" aria-label="Dinamo, home"><img src="/media/logo-l01.png" alt="Dinamo · Ride together"></a>
   <nav class="main" aria-label="Rides">
-    <a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a>
+    <a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert</a>
     <a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a>
+    <a href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem</a>
     <a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a>
     <a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a>
-    <a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids' clubs</a>
+    <a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids</a>
     <a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a>
     <a href="/en/#dina">About Dina</a>
   </nav>
@@ -263,8 +266,9 @@ footer a{color:inherit}
 <nav class="drawer" id="drawer" aria-label="Rides menu">
   <div class="dh"><img src="/media/logo-l01.png" alt="Dinamo"><button class="x" id="closeMenu" aria-label="Close menu">×</button></div>
   <small>RIDES</small>
-  <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>A full desert day</em></a>
-  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Wine · springs</em></a>
+  <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>Tailored to your group</em></a>
+  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Boutique, for groups</em></a>
+  <a class="it" href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Jerusalem tours</b><em>History and views</em></a>
   <a class="it" href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Morning ride</b><em>Wednesdays 7:00</em></a>
   <a class="it" href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>The 13 Journey</b><em>Bar/bat mitzvah</em></a>
   <a class="it" href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Kids' clubs</b><em>Kfar Adumim</em></a>
@@ -286,15 +290,15 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/forest.jpg" src="/media/forest.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Singletrack, forest trails and ridges, half an hour from home</li><li>A ride that builds fitness while you work on technique</li><li>A route that fits the group, with options to cut short or go longer</li><li>We arrive together and nobody is left behind</li><li>Coffee at the end, then straight to work</li></ul></section>
-<section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>When</dt><dd>Every Wednesday, 7:00–9:00</dd></div><div><dt>First ride</dt><dd>Wednesday, November 25, 2026</dd></div><div><dt>Where</dt><dd>Around Jerusalem, a different route every week. The meeting point is sent ahead</dd></div><div><dt>Try it</dt><dd>Your first ride is free</dd></div><div><dt>Price</dt><dd>90 ₪ per ride, or 340 ₪ a month for all rides</dd></div><div><dt>Gear</dt><dd>Your own mountain bike and a helmet</dd></div></dl><p class="fit"><b>Who it's for:</b> Off-road riders, and anyone who wants to start riding and build a regular routine.</p></section>
-<section class="wrap dsec faq"><h2>Questions</h2><details><summary>I&#x27;m not sure my level fits</summary><p>The route is chosen for whoever shows up, and it can be shortened or extended on the way. The first ride is free, so just come and try.</p></details><details><summary>Where do we meet?</summary><p>A different route every week around Jerusalem. The meeting point is sent to registered riders before the ride.</p></details><details><summary>What does the monthly pass include?</summary><p>340 ₪ a month for all the month’s rides. It also keeps your spot in the group.</p></details><details><summary>How big is the group?</summary><p>Spots are limited so it stays a group, not a crowd.</p></details></section>
+<section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>When</dt><dd>Every Wednesday, 7:00–9:00</dd></div><div><dt>First ride</dt><dd>Wednesday, November 25, 2026</dd></div><div><dt>Where</dt><dd>Around Jerusalem, a different route every week. The meeting point is sent ahead</dd></div><div><dt>Try it</dt><dd>Your first ride is free</dd></div><div><dt>Pass</dt><dd>Join for a single ride, or with a monthly pass</dd></div><div><dt>Gear</dt><dd>Your own mountain bike and a helmet</dd></div></dl><p class="fit"><b>Who it's for:</b> Off-road riders, and anyone who wants to start riding and build a regular routine.</p></section>
+<section class="wrap dsec faq"><h2>Questions</h2><details><summary>I&#x27;m not sure my level fits</summary><p>The route is chosen for whoever shows up, and it can be shortened or extended on the way. The first ride is free, so just come and try.</p></details><details><summary>Where do we meet?</summary><p>A different route every week around Jerusalem. The meeting point is sent to registered riders before the ride.</p></details><details><summary>Is there a monthly pass?</summary><p>Yes. It covers all the month’s rides and keeps your spot in the group. Details on WhatsApp.</p></details><details><summary>How big is the group?</summary><p>Spots are limited so it stays a group, not a crowd.</p></details></section>
 <section class="sec wrap" id="go">
   <div class="go">
     <div><h2>Ready<span style="color:#ff6a5c">?</span></h2><p>Send Dina a WhatsApp message and she will get back to you with everything you need to know.</p></div>
     <a class="btn" href="https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20like%20to%20save%20a%20spot%20on%20the%20Wednesday%20morning%20ride" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Save my spot on the first ride</a>
   </div>
 </section>
-<section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a><a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a></div></section>
+<section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem tours</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a><a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a></div></section>
 </main>
 <footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
@@ -364,7 +368,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
-  ['t-desert','t-tours','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
+  ['t-desert','t-tours','t-jlm','t-morning','t-13','t-kids','t-orgs'].forEach((id,i)=>{const c=document.querySelectorAll('.trail')[i]; if(c){c.id=id; c.style.scrollMarginTop='90px';}});
   const root=document.documentElement, burger=document.getElementById('burger');
   const setOpen=o=>{root.classList.toggle('menu-open',o); burger.setAttribute('aria-expanded',o);};
   burger.addEventListener('click',()=>setOpen(true));
