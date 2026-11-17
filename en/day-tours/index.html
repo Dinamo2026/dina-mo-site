@@ -202,6 +202,7 @@ footer img{height:24px}
 .lang:hover{background:rgba(18,32,62,.07)}
 .still-btn{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:600 14px var(--b);cursor:pointer;box-shadow:0 6px 20px rgba(18,32,62,.15)}
 .still-btn svg{width:16px;height:16px;fill:currentColor}
+@media (max-width:760px){.still-btn{padding:13px}.still-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
 .still .ticker .run{animation-play-state:paused}
 footer a{color:inherit}
 [dir=ltr] .ticker .run{animation-name:runl}
