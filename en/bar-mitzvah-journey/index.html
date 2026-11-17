@@ -15,7 +15,7 @@
 <meta property="og:title" content="Bar &amp; bat mitzvah journey in Jerusalem: a moving day for parents and child | Dinamo">
 <meta property="og:description" content="A unique, moving journey for parents and their bar or bat mitzvah child, between famous and holy sites in Jerusalem. At a viewpoint over the Temple Mount the parents read their child a letter, and breathtaking views wait along the way.">
 <meta property="og:url" content="https://dina-mo.com/en/bar-mitzvah-journey/">
-<meta property="og:image" content="https://dina-mo.com/media/jaffa-night.jpg">
+<meta property="og:image" content="https://dina-mo.com/media/bm-1.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -114,6 +114,9 @@ main,footer{position:relative;z-index:1}
 .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
+.fade{position:absolute;inset:0;overflow:hidden}
+.fade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.fade img.on{opacity:1}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 @media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
 @media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
@@ -217,7 +220,8 @@ footer a{color:inherit}
 .dhero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .dhero .ghost{font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
 .dmedia{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:76svh;width:100%;justify-self:center;background:#d8dee2;box-shadow:0 30px 60px -30px rgba(18,32,62,.45)}
-.dmedia video,.dmedia img{width:100%;height:100%;object-fit:cover;display:block}
+.dmedia{position:relative}
+.dmedia video,.dmedia > img{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:860px){.dhero{grid-template-columns:1fr}.dmedia{order:-1;max-height:none;aspect-ratio:4/4.6}}
 .dsec{padding-block:clamp(36px,6vw,70px)}
 .dsec h2{font-family:var(--d);font-weight:700;font-size:clamp(56px,7vw,96px);line-height:.85;margin:0 0 26px}
@@ -287,7 +291,7 @@ footer a{color:inherit}
     <p class="lead">A unique, moving journey for parents and their bar or bat mitzvah child, between famous and holy sites in Jerusalem. At a viewpoint over the Temple Mount the parents read their child a letter, and breathtaking views wait along the way.</p>
     <div class="cta"><a class="btn" href="https://wa.me/972585903093?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20the%2013%20Journey" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Plan our journey</a><a class="ghost" href="#details">All the details</a></div>
   </div>
-  <figure class="dmedia"><img src="/media/jaffa-night.jpg" alt="A moving Jerusalem journey before a bar or bat mitzvah" style="object-position:50% 70%"></figure>
+  <figure class="dmedia"><div class="fade"><img src="/media/bm-1.jpg" alt="Parents and daughter reading a letter facing the Old City at sunset" class="on"><img src="/media/bm-2.jpg" alt="Father and son facing the Dome of the Rock" loading="lazy"><img src="/media/bm-3.jpg" alt="Father and daughter with bikes at Jaffa Gate" loading="lazy"><img src="/media/bm-4.jpg" alt="Riding across the suspension bridge" loading="lazy"><img src="/media/bm-5.jpg" alt="A family at a viewpoint over the Old City" loading="lazy"><img src="/media/bm-6.jpg" alt="A family by the windmill" loading="lazy"><img src="/media/bm-7.jpg" alt="Father and daughter at the Little Western Wall" loading="lazy"><img src="/media/bm-8.jpg" alt="Parents and daughter in the arched passage" loading="lazy"><img src="/media/bm-9.jpg" alt="A family by the Knesset Menorah" loading="lazy"><img src="/media/bm-10.jpg" alt="Father and daughter by Absalom’s Tomb" loading="lazy"></div></figure>
 </section>
 <section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Famous and holy sites in Jerusalem</li><li>A letter the parents read to their child</li><li>A viewpoint over the Temple Mount</li><li>Breathtaking views along the way</li><li>At the end: a video and a map of the journey to keep</li></ul></section>
 <section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>Who</dt><dd>Parents and their bar or bat mitzvah child</dd></div><div><dt>Where</dt><dd>Jerusalem, between famous and holy sites</dd></div><div><dt>Length</dt><dd>A few hours, in the morning</dd></div><div><dt>Bikes</dt><dd>Bring your own, or we arrange rentals, e-bikes included</dd></div><div><dt>Gift</dt><dd>Available as a gift voucher, for example from grandparents</dd></div></dl><p class="fit"><b>Who it's for:</b> Families who want to mark the bar or bat mitzvah with a shared, moving day that stays long after the event.</p></section>
@@ -365,6 +369,12 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
   }
   size(); make(); requestAnimationFrame(frame);
   addEventListener('resize',()=>{const ow=W; size(); if(Math.abs(ow-W)>80) make();});
+})();
+// photo carousels (13 Journey): crossfade every 2 seconds
+(()=>{
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  document.querySelectorAll('.fade').forEach(f=>{const im=[...f.querySelectorAll('img')]; if(im.length<2) return; let i=0;
+    setInterval(()=>{ if(document.documentElement.classList.contains('still')) return; im[i].classList.remove('on'); i=(i+1)%im.length; im[i].classList.add('on'); },2000);});
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order

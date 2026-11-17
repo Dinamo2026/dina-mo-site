@@ -118,6 +118,9 @@ main,footer{position:relative;z-index:1}
 .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
+.fade{position:absolute;inset:0;overflow:hidden}
+.fade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.fade img.on{opacity:1}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 @media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
 @media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
@@ -280,9 +283,9 @@ footer a{color:inherit}
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · בהזמנה לקבוצות</div><h3>סיורי יום</h3><p>סיורי בוטיק בעמק האלה, עם טעימות יין בין הכרמים, ובגוש עציון בין יקבים ומעיינות.</p><div class="meta"><span>בוטיק</span><span>בהזמנה לקבוצות</span></div></div></a>
     <a class="trail" href="/jerusalem-tours/"><div class="media"><img src="/media/jerusalem.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/jerusalem.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · בהזמנה לקבוצות</div><h3>סיורי ירושלים</h3><p>סיור יום על אופניים בין אתרים היסטוריים ומעניינים בירושלים, עם תצפיות יפות על העיר.</p><div class="meta"><span>היסטוריה ותצפיות</span><span>עברית · English</span></div></div></a>
-    <a class="trail" href="/morning-ride/"><div class="media"><img src="/media/forest.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/forest.mp4"></video></div>
+    <a class="trail" href="/morning-ride/"><div class="media"><img src="/media/hills.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/hills.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · קבוצה קבועה</div><h3>רכיבת בוקר</h3><p>כל יום רביעי, 07:00–09:00, בכל שבוע מסלול אחר באזור ירושלים. מתחילים את היום בשביל.</p><div class="meta"><span>רביעי · 07:00</span><span>הראשונה ללא עלות</span></div></div></a>
-    <a class="trail" href="/bar-mitzvah-journey/"><div class="media"><img src="/media/jaffa-night.jpg" alt="אבא ובת עם אופניים מול שער יפו בלילה" loading="lazy" style="object-position:50% 72%"></div>
+    <a class="trail" href="/bar-mitzvah-journey/"><div class="media"><div class="fade"><img src="/media/bm-1.jpg" alt="הורים ובת מקריאים מכתב מול העיר העתיקה בשקיעה" class="on"><img src="/media/bm-2.jpg" alt="אבא ובן מול כיפת הסלע" loading="lazy"><img src="/media/bm-3.jpg" alt="אבא ובת עם אופניים בשער יפו" loading="lazy"><img src="/media/bm-4.jpg" alt="רכיבה על הגשר התלוי" loading="lazy"><img src="/media/bm-5.jpg" alt="משפחה בתצפית על העיר העתיקה" loading="lazy"><img src="/media/bm-6.jpg" alt="משפחה ליד טחנת הרוח" loading="lazy"><img src="/media/bm-7.jpg" alt="אבא ובת בכותל הקטן" loading="lazy"><img src="/media/bm-8.jpg" alt="הורים ובת במעבר הקשתות" loading="lazy"><img src="/media/bm-9.jpg" alt="משפחה מול המנורה בכנסת" loading="lazy"><img src="/media/bm-10.jpg" alt="אבא ובת ליד יד אבשלום" loading="lazy"></div></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>שביל כחול · הורים ובן/בת המצווה</div><h3>מסע ה-13</h3><p>מסע מרגש של ההורים עם בן או בת המצווה, בין אתרים מפורסמים וקדושים בירושלים, עד התצפית על הר הבית.</p><div class="meta"><span>מכתב מההורים</span><span>תצפיות מרהיבות</span></div></div></a>
     <a class="trail" href="/kids-club/"><div class="media"><img src="/media/jump.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/jump.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>שביל ירוק · ילדים</div><h3>חוגי ילדים</h3><p>חוג אופני שטח בכפר אדומים לכיתות א׳–ח׳: טכניקה, ביטחון, הנאה ודימוי עצמי.</p><div class="meta"><span>פעם בשבוע</span><span>כפר אדומים</span></div></div></a>
@@ -293,7 +296,7 @@ footer a{color:inherit}
 
 <section class="wrap" id="numbers">
   <div class="nums">
-    <div class="v"><video muted loop playsinline preload="none" poster="/media/forest.jpg" data-src="/media/forest.mp4"></video></div>
+    <div class="v"><video muted loop playsinline preload="none" poster="/media/hills.jpg" data-src="/media/hills.mp4"></video></div>
     <div class="t">
       <small>רכיבת הבוקר · כל יום רביעי · אזור ירושלים</small>
       <dl>
@@ -407,6 +410,12 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
   }
   size(); make(); requestAnimationFrame(frame);
   addEventListener('resize',()=>{const ow=W; size(); if(Math.abs(ow-W)>80) make();});
+})();
+// photo carousels (13 Journey): crossfade every 2 seconds
+(()=>{
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  document.querySelectorAll('.fade').forEach(f=>{const im=[...f.querySelectorAll('img')]; if(im.length<2) return; let i=0;
+    setInterval(()=>{ if(document.documentElement.classList.contains('still')) return; im[i].classList.remove('on'); i=(i+1)%im.length; im[i].classList.add('on'); },2000);});
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order

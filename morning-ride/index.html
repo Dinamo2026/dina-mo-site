@@ -15,7 +15,7 @@
 <meta property="og:title" content="רכיבת בוקר קבוצתית בירושלים, כל יום רביעי | דינמו">
 <meta property="og:description" content="יש שעה אחת בשבוע שבה ההרים שקטים לגמרי, ואנחנו יוצאים בדיוק אז. קבוצה קבועה באזור ירושלים, בכל שבוע מסלול אחר, ובסוף קפה ביחד ומשם ישר ליום.">
 <meta property="og:url" content="https://dina-mo.com/morning-ride/">
-<meta property="og:image" content="https://dina-mo.com/media/forest.jpg">
+<meta property="og:image" content="https://dina-mo.com/media/hills.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -114,6 +114,9 @@ main,footer{position:relative;z-index:1}
 .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:36px}
 .head h2{font-family:var(--d);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.85;margin:0}
 .head p{margin:0;max-width:40ch;color:var(--mute)}
+.fade{position:absolute;inset:0;overflow:hidden}
+.fade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.fade img.on{opacity:1}
 .trails{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 @media (min-width:961px){.trail:last-child:nth-child(3n+1){grid-column:1/-1;flex-direction:row}.trail:last-child:nth-child(3n+1) .media{flex:0 0 45%;aspect-ratio:auto;min-height:280px}}
 @media (max-width:960px) and (min-width:621px){.trail:last-child:nth-child(odd){grid-column:1/-1}}
@@ -217,7 +220,8 @@ footer a{color:inherit}
 .dhero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .dhero .ghost{font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink);padding-bottom:2px}
 .dmedia{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-height:76svh;width:100%;justify-self:center;background:#d8dee2;box-shadow:0 30px 60px -30px rgba(18,32,62,.45)}
-.dmedia video,.dmedia img{width:100%;height:100%;object-fit:cover;display:block}
+.dmedia{position:relative}
+.dmedia video,.dmedia > img{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:860px){.dhero{grid-template-columns:1fr}.dmedia{order:-1;max-height:none;aspect-ratio:4/4.6}}
 .dsec{padding-block:clamp(36px,6vw,70px)}
 .dsec h2{font-family:var(--d);font-weight:700;font-size:clamp(56px,7vw,96px);line-height:.85;margin:0 0 26px}
@@ -287,7 +291,7 @@ footer a{color:inherit}
     <p class="lead">יש שעה אחת בשבוע שבה ההרים שקטים לגמרי, ואנחנו יוצאים בדיוק אז. קבוצה קבועה באזור ירושלים, בכל שבוע מסלול אחר, ובסוף קפה ביחד ומשם ישר ליום.</p>
     <div class="cta"><a class="btn" href="https://wa.me/972522142445?text=%D7%94%D7%99%D7%99%20%D7%93%D7%99%D7%A0%D7%94%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%A8%D7%99%D7%99%D7%9F%20%D7%9E%D7%A7%D7%95%D7%9D%20%D7%91%D7%A8%D7%9B%D7%99%D7%91%D7%AA%20%D7%94%D7%91%D7%95%D7%A7%D7%A8%20%D7%A9%D7%9C%20%D7%99%D7%95%D7%9D%20%D7%A8%D7%91%D7%99%D7%A2%D7%99" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>לשריין מקום ברכיבה הראשונה</a><a class="ghost" href="#details">כל הפרטים</a></div>
   </div>
-  <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/forest.jpg" src="/media/forest.mp4" aria-hidden="true"></video></figure>
+  <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/hills.jpg" src="/media/hills.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>סינגלים, שבילי יער ורכסים, חצי שעה מהבית</li><li>רכיבה שמעלה כושר, ותוך כדי עובדים על טכניקה</li><li>מסלול שמותאם לקבוצה, עם אפשרות לקצר או להאריך</li><li>כולם מגיעים ביחד, ואף אחד לא נשאר מאחור</li><li>קפה בסוף, ומשם ישר לעבודה</li></ul></section>
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>מתי</dt><dd>כל יום רביעי, 07:00–09:00</dd></div><div><dt>רכיבה ראשונה</dt><dd>רביעי 25.11.2026</dd></div><div><dt>איפה</dt><dd>אזור ירושלים, בכל שבוע מסלול אחר. נקודת המפגש נשלחת מראש</dd></div><div><dt>ניסיון ראשון</dt><dd>הרכיבה הראשונה ללא עלות</dd></div><div><dt>מנוי</dt><dd>אפשר לבוא לרכיבה בודדת, או להצטרף במנוי חודשי</dd></div><div><dt>ציוד</dt><dd>אופני שטח משלכם וקסדה</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> מי שרוכב/ת שטח, ומי שרוצה להתחיל ולבנות שגרה קבועה של תנועה.</p></section>
@@ -365,6 +369,12 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
   }
   size(); make(); requestAnimationFrame(frame);
   addEventListener('resize',()=>{const ow=W; size(); if(Math.abs(ow-W)>80) make();});
+})();
+// photo carousels (13 Journey): crossfade every 2 seconds
+(()=>{
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  document.querySelectorAll('.fade').forEach(f=>{const im=[...f.querySelectorAll('img')]; if(im.length<2) return; let i=0;
+    setInterval(()=>{ if(document.documentElement.classList.contains('still')) return; im[i].classList.remove('on'); i=(i+1)%im.length; im[i].classList.add('on'); },2000);});
 })();
 (()=>{
   // anchors for the menu: one per ride card, in card order
