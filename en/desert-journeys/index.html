@@ -78,10 +78,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .blaze i{height:7px;background:#fff}.blaze i:nth-child(2){background:var(--c)}
 
 /* hero */
-.hero{display:grid;grid-template-columns:1fr;gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(28px,5vw,64px) clamp(40px,6vw,80px)}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(28px,5vw,64px) clamp(40px,6vw,80px)}
 .hero h1{font-family:var(--d);font-weight:700;font-size:clamp(96px,15vw,232px);line-height:.78;letter-spacing:-.01em;margin:0}
-.hero h1 span{display:inline-block;margin-inline-end:.18em}
-.hero .lede{max-width:52ch!important}
+.hero h1 span{display:block}
 .hero h1 .c{color:var(--blue)}
 /* rolling wheels behind everything */
 #wheels{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
@@ -99,9 +98,10 @@ main,footer{position:relative;z-index:1}
 @media (max-width:860px){
   .hero{grid-template-columns:1fr}
   /* phone: the three clips one after another, scrolled down */
-  .reel{display:flex;flex-direction:column;gap:14px}
-  .clip{width:100%;aspect-ratio:4/5;margin-top:0!important}
-  .clip .tag{font-size:16px;padding:9px 12px}
+  .reel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:6px}
+  .clip{aspect-ratio:9/14;margin-top:0!important;border-radius:12px}
+  .clip .tag{inset:auto 5px 5px;gap:5px;padding:5px 6px;font-size:11.5px;border-radius:7px}
+  .clip .tag .blaze{width:14px}.clip .tag .blaze i{height:3px}
 }
 
 /* ticker */
