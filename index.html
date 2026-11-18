@@ -101,9 +101,10 @@ main,footer{position:relative;z-index:1}
 .clip .tag .blaze{width:22px}.clip .tag .blaze i{height:5px}
 @media (max-width:860px){
   .hero{grid-template-columns:1fr}
-  .reel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(-1 * max(18px,env(safe-area-inset-left,0px)));padding-inline:max(18px,env(safe-area-inset-left,0px));scrollbar-width:none;order:-1}
-  .reel::-webkit-scrollbar{display:none}
-  .clip{flex:0 0 68vw;scroll-snap-align:center;margin-top:0!important}
+  /* phone: the three clips one after another, scrolled down */
+  .reel{display:flex;flex-direction:column;gap:14px}
+  .clip{width:100%;aspect-ratio:4/5;margin-top:0!important}
+  .clip .tag{font-size:16px;padding:9px 12px}
 }
 
 /* ticker */
