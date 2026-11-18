@@ -439,7 +439,10 @@ function run(){const v=n=>f.querySelector('input[name='+n+']:checked').value;
  document.getElementById('fText').textContent=r.p+(l==='easy'?' We will suggest e-bikes, so the climbs stay easy.':'');
  const a=document.getElementById('fLink'); a.href=r.u;
  const msg="Hi Dina, I'm visiting Israel and would love a ride. Interest: "+L[w]+". Time: "+L[t]+". Level: "+L[l]+". Suggested: "+r.t+".";
- document.getElementById('fWa').href='https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20your%20rides"wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
+ document.getElementById('fWa').href='https://wa.me/972522142445'+'?text='+encodeURIComponent(msg);}
+f.addEventListener('change',run); run();})();
+</script>
+<footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
 
 <button class="still-btn" id="stillBtn" aria-pressed="false" data-off="Pause motion" data-on="Play motion"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg><span>Pause motion</span></button>
