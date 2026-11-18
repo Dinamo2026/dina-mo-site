@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/forest.jpg" src="/media/forest.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>סינגלים, שבילי יער ורכסים, חצי שעה מהבית</li><li>רכיבה שמעלה כושר, ותוך כדי עובדים על טכניקה</li><li>מסלול שמותאם לקבוצה, עם אפשרות לקצר או להאריך</li><li>כולם מגיעים ביחד, ואף אחד לא נשאר מאחור</li><li>קפה בסוף, ומשם ישר לעבודה</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>מתי</dt><dd>כל יום רביעי, 07:00–09:00</dd></div><div><dt>רכיבה ראשונה</dt><dd>רביעי 25.11.2026</dd></div><div><dt>איפה</dt><dd>אזור ירושלים, בכל שבוע מסלול אחר. נקודת המפגש נשלחת מראש</dd></div><div><dt>ניסיון ראשון</dt><dd>הרכיבה הראשונה ללא עלות</dd></div><div><dt>מנוי</dt><dd>אפשר לבוא לרכיבה בודדת, או להצטרף במנוי חודשי</dd></div><div><dt>ציוד</dt><dd>אופני שטח משלכם וקסדה</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> מי שרוכב/ת שטח, ומי שרוצה להתחיל ולבנות שגרה קבועה של תנועה.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>אני לא בטוח/ה שאני ברמה מתאימה</summary><p>המסלול נבחר לפי מי שהגיע, ואפשר לקצר או להאריך תוך כדי. הרכיבה הראשונה ללא עלות, אז אפשר פשוט לבוא ולנסות.</p></details><details><summary>איפה נפגשים?</summary><p>בכל שבוע מסלול אחר באזור ירושלים. נקודת המפגש נשלחת לנרשמים לפני הרכיבה.</p></details><details><summary>יש מנוי חודשי?</summary><p>כן. המנוי כולל את כל רכיבות החודש ושומר לך מקום קבוע בקבוצה. הפרטים בוואטסאפ.</p></details><details><summary>כמה רוכבים בקבוצה?</summary><p>מספר המקומות מוגבל, כדי שתהיה קבוצה ולא המון.</p></details></section>
 <section class="sec wrap" id="go">

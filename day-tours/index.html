@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/vines.jpg" src="/media/vines.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>עמק האלה: רכיבה בין הכרמים, עם טעימות יין</li><li>גוש עציון: בין יקבים ומעיינות</li><li>סיור פרטי שנבנה במיוחד לקבוצה שלכם</li><li>קצב, אורך ועצירות לפי הקבוצה</li><li>הדרכה של מורת דרך מוסמכת לאורך כל היום</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>פורמט</dt><dd>סיור בוטיק פרטי, בהזמנה לקבוצות</dd></div><div><dt>אזורים</dt><dd>עמק האלה · גוש עציון</dd></div><div><dt>בדרך</dt><dd>כרמים, יקבי בוטיק, טעימות יין ומעיינות</dd></div><div><dt>משך</dt><dd>כ-4 שעות, או לפי הקבוצה</dd></div><div><dt>אופניים</dt><dd>אופני שטח וקסדה. אפשר לתאם</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> קבוצות חברים, משפחות וצוותים שרוצים יום מיוחד שמשלב רכיבה, טעמים ונוף.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>איך מזמינים סיור?</summary><p>שולחים לדינה הודעה עם התאריך, מספר המשתתפים והאזור, והיא חוזרת עם הצעה.</p></details><details><summary>אפשר לשלב את שני האזורים?</summary><p>כתבו לדינה מה מעניין אתכם, והיא תבנה את הסיור שמתאים לקבוצה.</p></details><details><summary>ואם אנחנו רוצים סיור בירושלים?</summary><p>לסיורי ירושלים יש דף משלהם: סיורי ירושלים.</p></details></section>
 <section class="sec wrap" id="go">

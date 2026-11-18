@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/group.jpg" src="/media/group.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>ימי גיבוש לחברות: יום רכיבה בטבע עם עצירות טובות</li><li>סדנאות טכניקה לקבוצות, למשל סדנת פארק</li><li>מסגרות הדרכה שבועיות לכפרי נוער, פנימיות ועמותות</li><li>רכיבות רגועות בשבילים רחבים, שמחזקות את תחושת המסוגלות</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>למי</dt><dd>חברות, בתי ספר, כפרי נוער, פנימיות, עמותות ומסגרות טיפוליות</dd></div><div><dt>פורמט</dt><dd>יום אחד, סדנה, או מסגרת שבועית קבועה</dd></div><div><dt>ניסיון</dt><dd>חיילים אחרי פציעות, פוסט-טראומה, מתמודדי נפש, ילדים על הספקטרום, נוער בסיכון, ילדים ומבוגרים</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> ארגונים שמחפשים פעילות בחוץ שמחברת בין אנשים, ומסגרות שרוצות הדרכה קבועה ומקצועית.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>אפשר להתאים את הפעילות לקבוצה שלנו?</summary><p>כן. דינה בונה את המסלול, הקצב והתוכן לפי גודל הקבוצה, הניסיון והמטרה.</p></details><details><summary>אתם עובדים עם מסגרות טיפוליות?</summary><p>כן. דינה מדריכה רכיבות רגועות בשבילים רחבים, עם ניסיון בעבודה עם פוסט-טראומה, פציעות ונוער בסיכון.</p></details><details><summary>איך מקבלים הצעת מחיר?</summary><p>שולחים הודעה עם כמה מילים על הקבוצה, ודינה חוזרת עם הצעה.</p></details></section>
 <section class="sec wrap" id="go">

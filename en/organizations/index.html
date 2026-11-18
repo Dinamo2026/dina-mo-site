@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/group.jpg" src="/media/group.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Team-building days for companies: a day of riding outdoors with good stops</li><li>Technique workshops for groups, such as a bike-park session</li><li>Weekly guided programs for youth villages, boarding schools and nonprofits</li><li>Calm rides on wide trails that strengthen a sense of capability</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>For</dt><dd>Companies, schools, youth villages, boarding schools, nonprofits and therapeutic programs</dd></div><div><dt>Format</dt><dd>A single day, a workshop, or a regular weekly program</dd></div><div><dt>Experience</dt><dd>Soldiers after injury, PTSD, mental-health support, kids on the autism spectrum, at-risk youth, children and adults</dd></div></dl><p class="fit"><b>Who it's for:</b> Organizations looking for an outdoor activity that brings people together, and programs that want regular, professional guiding.</p></section>
 <section class="wrap dsec faq"><h2>Questions</h2><details><summary>Can the activity be tailored to our group?</summary><p>Yes. Dina builds the route, pace and content around your group size, experience and goal.</p></details><details><summary>Do you work with therapeutic programs?</summary><p>Yes. Dina guides calm rides on wide trails, with experience working with PTSD, injuries and at-risk youth.</p></details><details><summary>How do we get a quote?</summary><p>Send a message with a few words about your group and Dina will get back to you with an offer.</p></details></section>
 <section class="sec wrap" id="go">
@@ -305,7 +314,28 @@ footer a{color:inherit}
 </section>
 <section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem tours</a><a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a></div></section>
 </main>
-<footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
+<script>
+(()=>{const f=document.getElementById('finder'); if(!f) return;
+const R={
+ desert:{t:'Judean Desert journey',p:'Little-known tracks through the heart of the Judean Desert, with views over the Dead Sea. Route, length and pace are matched to your group.',u:'/en/desert-journeys/'},
+ elah:{t:'Elah Valley: Bible, tells and vineyards',p:'Ride the valley linked to David and Goliath, past excavated ancient towns, and finish among the vineyards with a wine tasting.',u:'/en/day-tours/'},
+ gush:{t:'Gush Etzion: springs and wineries',p:'Ride the hills south of Jerusalem between springs, ancient terraces and boutique wineries.',u:'/en/day-tours/'},
+ jlm:{t:'Jerusalem by bike',p:'Historic sites, hidden lanes and views over the Old City, with the story behind every stop.',u:'/en/jerusalem-tours/'},
+ multi:{t:'A private multi-day ride across Israel',p:'Combine Jerusalem, the Judean Desert and other regions in one journey. Dina plans the route, bikes and logistics with you.',u:'#visit'}};
+const L={history:'Biblical and ancient history',today:'Modern Israel and local culture',nature:'Nature and views',challenge:'An off-road challenge',half:'half a day',full:'a full day',multi:'several days',easy:'beginner',mid:'intermediate',pro:'advanced'};
+function pick(w,t,l){
+ if(t==='multi') return 'multi';
+ if(w==='challenge') return l==='easy'?'gush':'desert';
+ if(w==='history') return t==='half'?'jlm':'elah';
+ if(w==='today') return 'jlm';
+ return (t==='full'&&l!=='easy')?'desert':'gush';}
+function run(){const v=n=>f.querySelector('input[name='+n+']:checked').value;
+ const w=v('want'),t=v('time'),l=v('level'),k=pick(w,t,l),r=R[k];
+ document.getElementById('fTitle').textContent=r.t;
+ document.getElementById('fText').textContent=r.p+(l==='easy'?' We will suggest e-bikes, so the climbs stay easy.':'');
+ const a=document.getElementById('fLink'); a.href=r.u;
+ const msg="Hi Dina, I'm visiting Israel and would love a ride. Interest: "+L[w]+". Time: "+L[t]+". Level: "+L[l]+". Suggested: "+r.t+".";
+ document.getElementById('fWa').href='https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20your%20rides"wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
 
 <button class="still-btn" id="stillBtn" aria-pressed="false" data-off="Pause motion" data-on="Play motion"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg><span>Pause motion</span></button>

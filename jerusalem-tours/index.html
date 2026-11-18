@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/jerusalem.jpg" src="/media/jerusalem.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>אתרים היסטוריים, עם הסיפור שמאחוריהם</li><li>פינות וסמטאות שלא רואים מהרכב</li><li>תצפיות יפות על העיר</li><li>מסלול שנבנה לפי הקבוצה</li><li>הדרכה בעברית או באנגלית</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>פורמט</dt><dd>סיור פרטי, בהזמנה לקבוצות</dd></div><div><dt>איפה</dt><dd>ירושלים, בין אתרים היסטוריים ותצפיות</dd></div><div><dt>משך</dt><dd>כמה שעות, בתיאום</dd></div><div><dt>אופניים</dt><dd>אפשר להגיע עם אופניים, או לתאם השכרה</dd></div><div><dt>שפה</dt><dd>עברית או אנגלית</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> קבוצות, משפחות ותיירים שרוצים להכיר את ירושלים מקרוב, בקצב של אופניים.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>הסיור מתאים לתיירים?</summary><p>כן. דינה מדריכה גם באנגלית.</p></details><details><summary>צריך להיות רוכב/ת מנוסה?</summary><p>המסלול נבנה לפי הקבוצה, והקצב נינוח עם הרבה עצירות.</p></details><details><summary>יש גם מסע לבר ובת מצווה?</summary><p>כן. מסע ה-13 הוא מסע מרגש בירושלים להורים עם בן או בת המצווה.</p></details></section>
 <section class="sec wrap" id="go">

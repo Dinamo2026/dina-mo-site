@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/desert-tall.jpg" src="/media/desert-tall.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>מסלולים לא מוכרים בלב מדבר יהודה</li><li>נקבים ופינות נסתרות</li><li>תצפיות על ים המלח ומצוקי דרגות</li><li>מפגשים בדרך: רועים, גמלים והשקט של המדבר</li><li>מסלול, אורך וקצב לפי רמת הקבוצה</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>איפה</dt><dd>לב מדבר יהודה</dd></div><div><dt>מסלולים</dt><dd>לא מוכרים, נבחרים לפי הקבוצה</dd></div><div><dt>רמה</dt><dd>מותאמת לקבוצה, ממתחילים עם ניסיון ועד רוכבים חזקים</dd></div><div><dt>פורמט</dt><dd>מסעות פתוחים, וגם בהזמנה לקבוצות</dd></div><div><dt>לדוגמה</dt><dd>חוצים את הפרא: כפר אדומים ← מצוקי דרגות, כ-50 ק״מ ו-1,200 מ׳ טיפוס</dd></div><div><dt>הדרכה</dt><dd>דינה גבאי, ובמסעות הארוכים גם ערן (בוחי) בוחבוט</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> מי שרוצה לראות את המדבר מבפנים, בקבוצה של חברים, משפחה או עבודה, בקצב שמתאים לכולם.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>אפשר להתאים את המסלול לקבוצה שלנו?</summary><p>כן. דינה בוחרת את המסלול, האורך והקצב לפי הרמה והניסיון של הקבוצה.</p></details><details><summary>מתי יש מסע פתוח?</summary><p>מסעות פתוחים מתפרסמים בוואטסאפ. שלחו הודעה, ודינה תעדכן אתכם ראשונים.</p></details><details><summary>אפשר באופניים חשמליים?</summary><p>כן. יש מסלולים לאופני שטח חשמליים ולאופניים רגילים, לפי הקבוצה.</p></details><details><summary>מה להביא?</summary><p>אופניים מתאימים לשטח, קסדה, ותיק עם מים ופנימית ספייר.</p></details></section>
 <section class="sec wrap" id="go">

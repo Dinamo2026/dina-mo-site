@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/jerusalem.jpg" src="/media/jerusalem.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>What to expect</h2><ul class="hl"><li>Historic sites and the stories behind them</li><li>Corners and alleys you never see from a car</li><li>Beautiful views over the city</li><li>A route built around your group</li><li>Guiding in Hebrew or English</li></ul></section>
+<section class="wrap dsec" id="stories"><h2>The stories behind the trails</h2><div class="stories"><article><span class="k">Tradition</span><h3>The Temple Mount</h3><p>In Jewish tradition the Temple Mount is Mount Moriah, site of the First and Second Temples. For Muslims it is the Haram al-Sharif, with the Dome of the Rock and al-Aqsa Mosque. Few places hold so much meaning for so many.</p></article><article><span class="k">Archaeology</span><h3>The City of David</h3><p>South of today’s Old City walls lies the oldest part of Jerusalem. Excavations there revealed its ancient water system, including Hezekiah’s Tunnel from around 700 BCE.</p></article><article><span class="k">History</span><h3>The walls you see today</h3><p>The Old City walls were rebuilt by the Ottoman sultan Suleiman the Magnificent between 1535 and 1542, on lines older still.</p></article><article><span class="k">Modern Israel</span><h3>Leaving the walls</h3><p>In 1860 Mishkenot Sha’ananim became one of the first neighborhoods built outside the walls. Montefiore’s windmill from 1857 still stands above it, with one of the best views of the Old City.</p></article></div><p class="stories-note">Labels show whether a story comes from biblical tradition, archaeological finds or the historical record.</p></section>
 <section class="wrap dsec" id="details"><h2>The details</h2><dl class="facts"><div><dt>Format</dt><dd>A private tour, booked for groups</dd></div><div><dt>Where</dt><dd>Jerusalem, between historic sites and viewpoints</dd></div><div><dt>Length</dt><dd>A few hours, by arrangement</dd></div><div><dt>Bikes</dt><dd>Bring your own, or we arrange rentals</dd></div><div><dt>Language</dt><dd>Hebrew or English</dd></div></dl><p class="fit"><b>Who it's for:</b> Groups, families and visitors who want to know Jerusalem up close, at the pace of a bike.</p></section>
 <section class="wrap dsec faq"><h2>Questions</h2><details><summary>Is the tour good for visitors from abroad?</summary><p>Yes. Dina guides in English too.</p></details><details><summary>Do we need to be experienced riders?</summary><p>The route is built around the group, at a relaxed pace with plenty of stops.</p></details><details><summary>Is there a bar or bat mitzvah journey?</summary><p>Yes. The 13 Journey is a moving Jerusalem journey for parents and their bar or bat mitzvah child.</p></details></section>
 <section class="sec wrap" id="go">
@@ -305,7 +314,28 @@ footer a{color:inherit}
 </section>
 <section class="wrap dsec"><h2>More ways to ride with us</h2><div class="more"><a href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Desert journeys</a><a href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Day tours</a><a href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Morning ride</a><a href="/en/bar-mitzvah-journey/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>The 13 Journey</a><a href="/en/kids-club/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Kids&#x27; clubs</a><a href="/en/organizations/"><span class="blaze" style="--c:var(--black)"><i></i><i></i><i></i></span>Organizations</a></div></section>
 </main>
-<footer><div class="wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
+<script>
+(()=>{const f=document.getElementById('finder'); if(!f) return;
+const R={
+ desert:{t:'Judean Desert journey',p:'Little-known tracks through the heart of the Judean Desert, with views over the Dead Sea. Route, length and pace are matched to your group.',u:'/en/desert-journeys/'},
+ elah:{t:'Elah Valley: Bible, tells and vineyards',p:'Ride the valley linked to David and Goliath, past excavated ancient towns, and finish among the vineyards with a wine tasting.',u:'/en/day-tours/'},
+ gush:{t:'Gush Etzion: springs and wineries',p:'Ride the hills south of Jerusalem between springs, ancient terraces and boutique wineries.',u:'/en/day-tours/'},
+ jlm:{t:'Jerusalem by bike',p:'Historic sites, hidden lanes and views over the Old City, with the story behind every stop.',u:'/en/jerusalem-tours/'},
+ multi:{t:'A private multi-day ride across Israel',p:'Combine Jerusalem, the Judean Desert and other regions in one journey. Dina plans the route, bikes and logistics with you.',u:'#visit'}};
+const L={history:'Biblical and ancient history',today:'Modern Israel and local culture',nature:'Nature and views',challenge:'An off-road challenge',half:'half a day',full:'a full day',multi:'several days',easy:'beginner',mid:'intermediate',pro:'advanced'};
+function pick(w,t,l){
+ if(t==='multi') return 'multi';
+ if(w==='challenge') return l==='easy'?'gush':'desert';
+ if(w==='history') return t==='half'?'jlm':'elah';
+ if(w==='today') return 'jlm';
+ return (t==='full'&&l!=='easy')?'desert':'gush';}
+function run(){const v=n=>f.querySelector('input[name='+n+']:checked').value;
+ const w=v('want'),t=v('time'),l=v('level'),k=pick(w,t,l),r=R[k];
+ document.getElementById('fTitle').textContent=r.t;
+ document.getElementById('fText').textContent=r.p+(l==='easy'?' We will suggest e-bikes, so the climbs stay easy.':'');
+ const a=document.getElementById('fLink'); a.href=r.u;
+ const msg="Hi Dina, I'm visiting Israel and would love a ride. Interest: "+L[w]+". Time: "+L[t]+". Level: "+L[l]+". Suggested: "+r.t+".";
+ document.getElementById('fWa').href='https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20your%20rides"wrap"><img src="/media/logo-l01.png" alt="Dinamo"><span>Dinamo · Dina Gabay's riding club · <a href="/en/accessibility/">Accessibility statement</a> · <a href="/" lang="he">עברית</a></span></div></footer>
 <a class="fab" href="https://wa.me/972522142445" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Message Dina</a>
 
 <button class="still-btn" id="stillBtn" aria-pressed="false" data-off="Pause motion" data-on="Play motion"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg><span>Pause motion</span></button>

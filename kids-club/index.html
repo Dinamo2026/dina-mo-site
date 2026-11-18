@@ -245,6 +245,14 @@ footer a{color:inherit}
 .more{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .more a{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px;text-decoration:none;font-family:var(--d);font-weight:700;font-size:36px;line-height:1;transition:border-color .2s,transform .2s}
 .more a:hover{border-color:var(--blue);transform:translateY(-2px)}
+
+.stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stories article{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.stories .k{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.stories h3{margin:0 0 8px;font-size:20px}
+.stories p{margin:0;color:var(--mute)}
+.stories-note{margin:14px 0 0;color:var(--mute);font-size:15px}
+@media (max-width:700px){.stories{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -295,6 +303,7 @@ footer a{color:inherit}
   <figure class="dmedia"><video autoplay muted loop playsinline preload="metadata" poster="/media/jump.jpg" src="/media/jump.mp4" aria-hidden="true"></video></figure>
 </section>
 <section class="wrap dsec"><h2>מה מחכה לכם</h2><ul class="hl"><li>טכניקה ושליטה באופניים, בקצב של כל ילד/ה</li><li>ביטחון בשטח, ירידות ראשונות וקפיצות ראשונות</li><li>הנאה, חברים ושעה טובה בחוץ</li><li>דימוי עצמי וביטחון עצמי שמתחזקים מרכיבה לרכיבה</li><li>שתי רכיבות ארוכות בשנה, וקייטנות בחנוכה ובפסח</li></ul></section>
+
 <section class="wrap dsec" id="details"><h2>הפרטים</h2><dl class="facts"><div><dt>איפה</dt><dd>כפר אדומים</dd></div><div><dt>מתי</dt><dd>פעם בשבוע, אחר הצהריים</dd></div><div><dt>כיתות</dt><dd>א׳–ח׳, בקבוצות לפי גיל</dd></div><div><dt>מדריכה</dt><dd>דינה גבאי, מדריכת רכיבת הרים מוסמכת</dd></div><div><dt>הרשמה</dt><dd>בוואטסאפ</dd></div></dl><p class="fit"><b>למי זה מתאים:</b> ילדים שאוהבים לזוז, להתלכלך קצת ולהיות בחוץ עם חברים.</p></section>
 <section class="wrap dsec faq"><h2>שאלות נפוצות</h2><details><summary>מה הילד/ה צריך/ה להביא?</summary><p>אופניים תקינים, קסדה ובקבוק מים.</p></details><details><summary>יש פעילות בחופשות?</summary><p>כן. יש קייטנות רכיבה בחנוכה ובפסח.</p></details><details><summary>איך נרשמים?</summary><p>שולחים לדינה הודעה בוואטסאפ, והיא חוזרת עם כל הפרטים.</p></details></section>
 <section class="sec wrap" id="go">
