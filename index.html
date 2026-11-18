@@ -190,11 +190,11 @@ footer img{height:24px}
 @media (max-width:760px){.top > .wrap > .btn{display:none}.fab{display:inline-flex}}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 /* "זזים": the desert seen through the word, scroll zooms into one letter until the film fills the screen */
-.zz{position:relative;height:240vh}
-.zstage{position:sticky;top:0;height:100svh;overflow:hidden}
+.zz{position:relative;height:120vh}
+.zstage{position:sticky;top:25svh;height:50svh;overflow:hidden}
 .zstage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .zstage canvas{position:absolute;inset:0;width:100%;height:100%}
-.zline{position:absolute;inset:auto 0 14%;text-align:center;font-family:var(--d);font-weight:700;font-size:clamp(64px,10vw,140px);line-height:.85;color:#fff;opacity:0;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.zline{position:absolute;inset:auto 0 14%;text-align:center;font-family:var(--d);font-weight:700;font-size:clamp(40px,6vw,88px);line-height:.85;color:#fff;opacity:0;text-shadow:0 2px 30px rgba(0,0,0,.45)}
 @media (prefers-reduced-motion:reduce){.ticker .run{animation:none}*{transition:none!important}.zz{height:auto}.zstage{position:relative}.zstage canvas{display:none}.zline{opacity:1}}
 </style>
 
@@ -483,7 +483,7 @@ let s=false;try{s=localStorage.getItem('dm-still')==='1'}catch(e){}if(s)set(true
     draw();
   }
   function draw(){
-    const span=sec.offsetHeight-innerHeight, top=sec.getBoundingClientRect().top;
+    const stg=sec.firstElementChild, span=sec.offsetHeight-stg.offsetHeight, top=sec.getBoundingClientRect().top-parseFloat(getComputedStyle(stg).top);
     const p=Math.min(Math.max(-top/span,0),1), z=Math.min(1,p/.7), s=1+Math.pow(z,2.4)*(sEnd-1);
     ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
     if(z<1){
