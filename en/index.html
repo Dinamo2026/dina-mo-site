@@ -240,7 +240,7 @@ footer a{color:inherit}
   <div class="dh"><img src="/media/logo-l01.png" alt="Dinamo"><button class="x" id="closeMenu" aria-label="Close menu">×</button></div>
   <small>RIDES</small>
   <a class="it" href="/en/desert-journeys/"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span><b>Desert journeys</b><em>Tailored to your group</em></a>
-  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>Boutique, for groups</em></a>
+  <a class="it" href="/en/day-tours/"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span><b>Day tours</b><em>All over Israel</em></a>
   <a class="it" href="/en/jerusalem-tours/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Jerusalem tours</b><em>History and views</em></a>
   <a class="it" href="/en/morning-ride/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>Morning ride</b><em>Wednesdays 7:00</em></a>
   <a class="it" href="https://dinamo2026.github.io/ride-into-jerusalem/"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span><b>The 13 Journey</b><em>Bar/bat mitzvah</em></a>
@@ -283,7 +283,7 @@ footer a{color:inherit}
     <a class="trail" href="/en/desert-journeys/"><div class="media"><img src="/media/desert-tall.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/desert-tall.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Red trail · tailored to your group</div><h3>Desert journeys</h3><p>Rides in the heart of the Judean Desert on little-known routes, with views over the Dead Sea.</p><div class="meta"><span>Little-known routes</span><span>Matched to your level</span></div></div></a>
     <a class="trail" href="/en/day-tours/"><div class="media"><img src="/media/vines.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/vines.mp4"></video></div>
-      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Green trail · private, for groups</div><h3>Day tours</h3><p>Boutique tours in the Elah Valley with wine tastings among the vineyards, and in Gush Etzion among wineries and springs.</p><div class="meta"><span>Boutique</span><span>Booked for groups</span></div></div></a>
+      <div class="body"><div class="mark"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Green trail · private, for groups</div><h3>Day tours</h3><p>Boutique day rides anywhere in Israel, built for your group: from the vineyards of the Elah Valley and the springs of Gush Etzion to the Galilee and the Negev.</p><div class="meta"><span>All over Israel</span><span>Booked for groups</span></div></div></a>
     <a class="trail" href="/en/jerusalem-tours/"><div class="media"><img src="/media/jerusalem.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/jerusalem.mp4"></video></div>
       <div class="body"><div class="mark"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Blue trail · private, for groups</div><h3>Jerusalem tours</h3><p>A day on bikes between historic and fascinating sites in Jerusalem, with beautiful views over the city.</p><div class="meta"><span>History and views</span><span>Hebrew · English</span></div></div></a>
     <a class="trail" href="/en/organizations/"><div class="media"><img src="/media/group.jpg" alt="" loading="lazy"><video muted loop playsinline preload="none" data-src="/media/group.mp4"></video></div>
@@ -298,20 +298,12 @@ footer a{color:inherit}
 <style>
 .visit h2,.finder h2,.plan h2{font-family:var(--d);font-weight:700;font-size:clamp(56px,7vw,100px);line-height:.85;margin:0 0 14px}
 .visit .intro{font-size:clamp(18px,1.6vw,21px);color:var(--mute);max-width:62ch;margin:0 0 28px}
-.dest{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.dest a{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
-.dest a:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(18,32,62,.5)}
-.dest img{aspect-ratio:4/3;object-fit:cover;width:100%;display:block;background:#d8dee2}
-.dest .b{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px}
-.dest h3{font-family:var(--d);font-weight:700;font-size:40px;line-height:.9;margin:0}
-.dest p{margin:0;color:var(--mute);font-size:16px}
-.dest .k{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--c)}
-@media (max-width:960px){.dest{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.dest{grid-template-columns:1fr}}
-.anywhere{margin-top:18px;background:var(--blue);color:#fff;border-radius:20px;padding:22px 26px;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:space-between}
-.anywhere p{margin:0;font-size:18px;max-width:60ch}
-.anywhere b{font-family:var(--d);font-size:36px;line-height:1;display:block;margin-bottom:4px}
-.anywhere a{color:#fff;font-weight:700}
+.country{position:relative;display:block;border-radius:24px;overflow:hidden;aspect-ratio:21/9;background:#d8dee2;text-decoration:none;box-shadow:0 30px 60px -30px rgba(18,32,62,.45)}
+.country .fade img{object-position:50% 55%}
+.country .cap{position:absolute;inset:auto 0 0;padding:clamp(18px,3vw,32px);background:linear-gradient(transparent,rgba(18,32,62,.78));color:#fff;display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap}
+.country .cap b{font-family:var(--d);font-weight:700;font-size:clamp(40px,5vw,72px);line-height:.9}
+.country .cap span{font-weight:700;font-size:18px;border-bottom:2px solid #fff;padding-bottom:2px}
+@media (max-width:700px){.country{aspect-ratio:4/5}}
 .finder .box{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,4vw,44px)}
 .finder fieldset{border:0;margin:0 0 22px;padding:0}
 .finder legend{font-weight:700;font-size:20px;margin-bottom:12px;padding:0}
@@ -335,9 +327,8 @@ footer a{color:inherit}
 </style>
 <section class="sec wrap visit" id="visit">
   <h2>Discover Israel from the saddle</h2>
-  <p class="intro">Private guided mountain-bike tours in Israel, beyond the usual tourist routes. Ride open landscapes and ancient paths, stop where the stories happened, and hear how the land, its history and life here today fit together, from a local licensed tour guide.</p>
-  <div class="dest"><a href="/en/day-tours/#stories" style="--c:var(--green)"><img src="/media/vines.jpg" alt="" loading="lazy"><div class="b"><span class="k">Biblical landscapes</span><h3>Elah Valley</h3><p>Ride where tradition places David and Goliath, past ancient tells, then on through the vineyards to a wine tasting.</p></div></a><a href="/en/day-tours/#stories" style="--c:var(--green)"><img src="/media/hills.jpg" alt="" loading="lazy"><div class="b"><span class="k">Wineries and springs</span><h3>Gush Etzion</h3><p>An ancient ridge road south of Jerusalem, Second Temple-era aqueducts, springs and boutique wineries.</p></div></a><a href="/en/jerusalem-tours/#stories" style="--c:var(--blue)"><img src="/media/jerusalem.jpg" alt="" loading="lazy"><div class="b"><span class="k">3,000 years of stories</span><h3>Jerusalem</h3><p>Historic sites, hidden lanes and views over the Old City, with the story behind every stop.</p></div></a><a href="/en/desert-journeys/#stories" style="--c:var(--red)"><img src="/media/desert-wide.jpg" alt="" loading="lazy"><div class="b"><span class="k">Monks, scrolls and shepherds</span><h3>Judean Desert</h3><p>Little-known tracks from the Jerusalem ridge down toward the Dead Sea, the lowest place on land.</p></div></a></div>
-  <div class="anywhere"><p><b>Anywhere in Israel</b>The Galilee, the Carmel, the Negev and beyond: Dina can plan a private route almost anywhere in the country, for a half day, a full day or several days.</p><a href="https://wa.me/972522142445?text=Hi%20Dina%2C%20I%27d%20love%20to%20hear%20about%20your%20rides" target="_blank" rel="noopener">Plan a custom route →</a></div>
+  <p class="intro">Private guided rides anywhere in Israel, with a local licensed tour guide.</p>
+  <a class="country" href="/en/day-tours/"><div class="fade"><img src="/media/camels.jpg" alt="Riders meeting a herd of camels in the Judean Desert" class="on"><img src="/media/ridge.jpg" alt="Riders on a desert ridge" loading="lazy"></div><div class="cap"><b>Rides all over Israel</b><span>See the details →</span></div></a>
 </section>
 
 <section class="sec wrap finder" id="find">
