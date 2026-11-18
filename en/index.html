@@ -82,9 +82,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .blaze i{height:7px;background:#fff}.blaze i:nth-child(2){background:var(--c)}
 
 /* hero */
-.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(28px,5vw,64px) clamp(40px,6vw,80px)}
+.hero{display:grid;grid-template-columns:1fr;gap:clamp(20px,4vw,60px);align-items:center;padding-block:clamp(28px,5vw,64px) clamp(40px,6vw,80px)}
 .hero h1{font-family:var(--d);font-weight:700;font-size:clamp(96px,15vw,232px);line-height:.78;letter-spacing:-.01em;margin:0}
-.hero h1 span{display:block}
+.hero h1 span{display:inline-block;margin-inline-end:.18em}
+.hero .lede{max-width:52ch!important}
 .hero h1 .c{color:var(--blue)}
 /* rolling wheels behind everything */
 #wheels{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
@@ -256,11 +257,6 @@ footer a{color:inherit}
     <h1><span>Get</span><span>on the</span><span>bike</span><span class="c">and move<span class="dot" style="display:inline">.</span></span></h1>
     <p class="lede"><b>Ride through history.</b> Private guided mountain-bike tours in Israel: the Judean Desert, the Elah Valley, Gush Etzion and Jerusalem, <b>guided by Dina Gabay</b>, a licensed tour guide. Pick a trail and we'll take care of the rest.</p>
     <p style="margin-top:18px"><a class="btn" href="#find">Visiting Israel? Find your ride</a></p>
-  </div>
-  <div class="reel" aria-label="Clips from the trail">
-    <figure class="clip" style="margin:0"><video autoplay muted loop playsinline preload="auto" poster="/media/ridge-wide.jpg" src="/media/ridge-wide.mp4" style="object-position:55% 50%"></video><figcaption class="tag"><span class="blaze" style="--c:var(--red)"><i></i><i></i><i></i></span>Judean Desert</figcaption></figure>
-    <figure class="clip" style="margin:0"><video autoplay muted loop playsinline preload="auto" poster="/media/jerusalem.jpg" src="/media/jerusalem.mp4"></video><figcaption class="tag"><span class="blaze" style="--c:var(--blue)"><i></i><i></i><i></i></span>Jerusalem</figcaption></figure>
-    <figure class="clip" style="margin:0"><video autoplay muted loop playsinline preload="auto" poster="/media/hills.jpg" src="/media/hills.mp4" style="object-position:38% 50%"></video><figcaption class="tag"><span class="blaze" style="--c:var(--green)"><i></i><i></i><i></i></span>Jerusalem Hills</figcaption></figure>
   </div>
 </section>
 
